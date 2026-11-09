@@ -1,0 +1,37 @@
+name: Lean
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Install pinned Lean, restore Mathlib cache, and build all proofs
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-mathlib-cache: true
+          build: true
+          build-args: >-
+            ModNullUniversalityProof
+            Solutions.Main
+            Solutions.CompactCosetUnboundedness
+            Solutions.HaarAmplification
+      - name: Check complete direct-upload bundles and exact published types
+        run: |
+          python3 scripts/prepare_upload.py all --target haar
+          python3 scripts/prepare_upload.py all --target compact
+          python3 scripts/prepare_upload.py all --target main
