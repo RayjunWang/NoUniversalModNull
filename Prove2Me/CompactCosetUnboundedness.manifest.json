@@ -1,0 +1,1540 @@
+{
+  "target_key": "compact",
+  "target_id": "c7e304ee-20dd-402d-86fa-6d01ada79173",
+  "target_name": "ModNullUniversality.compact_coset_unboundedness",
+  "root_module": "Solutions.CompactCosetUnboundedness",
+  "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "solution": "upload/CompactCosetUnboundedness.lean",
+  "sha256": "68df3abbf7d972b0995646b2b19a2b8862511d294d5522a53b1fd45de0feb61f",
+  "bytes": 204019,
+  "modules": [
+    {
+      "module": "NoBorelUpperBound.L1Coordinates",
+      "path": "NoBorelUpperBound/L1Coordinates.lean",
+      "source_sha256": "7b0d079f57dd4724e19562c1efd135c11405ba4d15f5b0ea6a46a42f58430523",
+      "source_bytes": 9710,
+      "retained_body_sha256": "8134e6af92be2e4691cd836d91b1c9a892919b8511543c9d7c9d1918489dbf81",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 48
+        },
+        {
+          "start": 49,
+          "stop": 96
+        },
+        {
+          "start": 97,
+          "stop": 118
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 48
+        },
+        {
+          "start": 49,
+          "stop": 96
+        },
+        {
+          "start": 97,
+          "stop": 118
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.Coordinates",
+      "path": "ModNullProof/Coordinates.lean",
+      "source_sha256": "7f28c4f63b726c06f0e6fbf345aec6f8795321e50f66c0603a85694294877c89",
+      "source_bytes": 1303,
+      "retained_body_sha256": "ff379c63dddec2b6bbf7df76988a329fe47c1ab75eec3d42732ffbbf653cc544",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 45
+        },
+        {
+          "start": 46,
+          "stop": 84
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 45
+        },
+        {
+          "start": 46,
+          "stop": 84
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.CompactEmbedding",
+      "path": "ModNullProof/CompactEmbedding.lean",
+      "source_sha256": "e22da70e54fd2bf9709f9e03395ff87f4f24a38a56688ff389919ccb81fab609",
+      "source_bytes": 3632,
+      "retained_body_sha256": "f91686fe74225f1e6720209af67d8389de5f2a8b65d6905384607747c4fac110",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 78
+        },
+        {
+          "start": 79,
+          "stop": 127
+        },
+        {
+          "start": 128,
+          "stop": 171
+        },
+        {
+          "start": 172,
+          "stop": 219
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 78
+        },
+        {
+          "start": 79,
+          "stop": 127
+        },
+        {
+          "start": 128,
+          "stop": 171
+        },
+        {
+          "start": 172,
+          "stop": 219
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.BorelComplexity",
+      "path": "ModNullProof/BorelComplexity.lean",
+      "source_sha256": "28792daa99005e55a8387f178d3ab3669e4a95b1eef9b410587ddf7e7f3a13c9",
+      "source_bytes": 5777,
+      "retained_body_sha256": "3265a75763762114249b8ffc56d561607ef612343cae219265c5de64c0bcda3e",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 42
+        },
+        {
+          "start": 43,
+          "stop": 89
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 42
+        },
+        {
+          "start": 43,
+          "stop": 89
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.NilpotentGroup",
+      "path": "NoBorelUpperBound/NilpotentGroup.lean",
+      "source_sha256": "81f767d17167f7a977cbe6f296f4cc5a088d53815c2c5a9f99218a02259dad97",
+      "source_bytes": 4726,
+      "retained_body_sha256": "1367f9e97a120dfba6a62f97207d6ed651e5ff807376568e8fcca80c43137590",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 105
+        },
+        {
+          "start": 106,
+          "stop": 149
+        },
+        {
+          "start": 150,
+          "stop": 171
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 105
+        },
+        {
+          "start": 106,
+          "stop": 149
+        },
+        {
+          "start": 150,
+          "stop": 171
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.NilpotentGenerated",
+      "path": "NoBorelUpperBound/NilpotentGenerated.lean",
+      "source_sha256": "4ed6410fd131a7fb0ec976432dfcd1367f4abed2b0f9fac9fc9626375229fdca",
+      "source_bytes": 5621,
+      "retained_body_sha256": "27ff5413321e7e648cb214db335fb221e0a5949abdc2274e99fcc8852ea62c4e",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 39
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 39
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.SymmetricTensorLinear",
+      "path": "NoBorelUpperBound/SymmetricTensorLinear.lean",
+      "source_sha256": "893d08ae0a096f5f26cc8e88af28bf28111c3d4db5c00ffce4c186fc52cba531",
+      "source_bytes": 6161,
+      "retained_body_sha256": "db0659d26d54a67ca7acca88278fbcfff598bc7e41dce149cbe6d70bf395a969",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 40,
+          "stop": 80
+        },
+        {
+          "start": 82,
+          "stop": 122
+        },
+        {
+          "start": 124,
+          "stop": 168
+        },
+        {
+          "start": 170,
+          "stop": 224
+        },
+        {
+          "start": 226,
+          "stop": 266
+        },
+        {
+          "start": 268,
+          "stop": 289
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 39,
+          "stop": 79
+        },
+        {
+          "start": 80,
+          "stop": 120
+        },
+        {
+          "start": 121,
+          "stop": 165
+        },
+        {
+          "start": 166,
+          "stop": 220
+        },
+        {
+          "start": 221,
+          "stop": 261
+        },
+        {
+          "start": 262,
+          "stop": 283
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.SymmetricTensor",
+      "path": "NoBorelUpperBound/SymmetricTensor.lean",
+      "source_sha256": "4da75adfdd7147657d79fb4de261fe200e1eeecb5f3f1c1e8f5034345d2b3ca3",
+      "source_bytes": 3936,
+      "retained_body_sha256": "63925c462e5a53227b12f00b49daea48429fa536166891bb3c15a6b969fbaf2a",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 46
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 46
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.SymmetricTensorCharts",
+      "path": "NoBorelUpperBound/SymmetricTensorCharts.lean",
+      "source_sha256": "0109032f43d7a3611c84382a7f2af976b9201d41abef4c9e71da6db5e16445d1",
+      "source_bytes": 5578,
+      "retained_body_sha256": "f8a4e1f6859bcc96787ea547128fa0f8735d9d1a4ddf56bf5d24404d873f6a2e",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.SymmetricTensorRank",
+      "path": "NoBorelUpperBound/SymmetricTensorRank.lean",
+      "source_sha256": "e91bff680195906729751501654aaaf208a581236ade4ccaf186e707bad47cf1",
+      "source_bytes": 10452,
+      "retained_body_sha256": "3e8e9e7b22eeb4867c1379168767b86e87223fd51b376e8f81dc92e9110eb149",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.SymmetricTensorImage",
+      "path": "NoBorelUpperBound/SymmetricTensorImage.lean",
+      "source_sha256": "2d30a4bc06f9e2c04e56f3197023666def0e9532d0497a15fcd16da98e26ef78",
+      "source_bytes": 4931,
+      "retained_body_sha256": "741119a56c40d64b6a014dd65254be19a797cb028e98be2135d977a11c5dd6dd",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 46
+        },
+        {
+          "start": 47,
+          "stop": 91
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 46
+        },
+        {
+          "start": 47,
+          "stop": 91
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.TreeSpace",
+      "path": "NoBorelUpperBound/TreeSpace.lean",
+      "source_sha256": "395dd7ab9c6bcf5baafe03193b188c80606dd9960c7d3c526b1f45d4a80a666a",
+      "source_bytes": 3219,
+      "retained_body_sha256": "2bfae0759e5814e1cb6add4f7f6cb362ec0b7bea271c693d7a8b2f1a62583e3c",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 48
+        },
+        {
+          "start": 49,
+          "stop": 77
+        },
+        {
+          "start": 78,
+          "stop": 119
+        },
+        {
+          "start": 120,
+          "stop": 149
+        },
+        {
+          "start": 150,
+          "stop": 171
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 48
+        },
+        {
+          "start": 49,
+          "stop": 77
+        },
+        {
+          "start": 78,
+          "stop": 119
+        },
+        {
+          "start": 120,
+          "stop": 149
+        },
+        {
+          "start": 150,
+          "stop": 171
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.TreeShift",
+      "path": "NoBorelUpperBound/TreeShift.lean",
+      "source_sha256": "089e6817b6e7eec582a26b3677b687c22075cec5499998554fe9b619f9a295e9",
+      "source_bytes": 7545,
+      "retained_body_sha256": "23b07dcf441a9d1c96af2168d07481bb4c9b748230d6d43d3b44d7efb99f4eb7",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 39,
+          "stop": 90
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 39,
+          "stop": 90
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.TreeKernels",
+      "path": "NoBorelUpperBound/TreeKernels.lean",
+      "source_sha256": "b02779fe0f15cd88ec044206a56c68f1cb29b38c2cf47b044b38a16c3b032654",
+      "source_bytes": 6895,
+      "retained_body_sha256": "4d91fab58f9cbc2ea3f0c171e11512bcbec321ebf0ceb00658c89fab948ed6c0",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        },
+        {
+          "start": 35,
+          "stop": 69
+        },
+        {
+          "start": 70,
+          "stop": 115
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        },
+        {
+          "start": 35,
+          "stop": 69
+        },
+        {
+          "start": 70,
+          "stop": 115
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.L1Separable",
+      "path": "NoBorelUpperBound/L1Separable.lean",
+      "source_sha256": "c8733cfb022367c5fd30b2c9d21b7a554efcf4ff2390a2f7e451bbc955674dbc",
+      "source_bytes": 1196,
+      "retained_body_sha256": "6c6eabbf95190d9e6221cac836f8a45b9e708364a700aee692f442a6444b4553",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 39,
+          "stop": 83
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 38
+        },
+        {
+          "start": 39,
+          "stop": 83
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.Construction",
+      "path": "NoBorelUpperBound/Construction.lean",
+      "source_sha256": "923cc0cab31b9762694a712c8baf669c7ff45ee1449a6e37e8735a5524aad59b",
+      "source_bytes": 6314,
+      "retained_body_sha256": "b86a80691a1a5b9c83293ac40bdd48fbea57baca4feeb26be9a887946fdf815a",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 43
+        },
+        {
+          "start": 44,
+          "stop": 84
+        },
+        {
+          "start": 85,
+          "stop": 130
+        },
+        {
+          "start": 131,
+          "stop": 167
+        },
+        {
+          "start": 168,
+          "stop": 204
+        },
+        {
+          "start": 205,
+          "stop": 249
+        },
+        {
+          "start": 250,
+          "stop": 293
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 43
+        },
+        {
+          "start": 44,
+          "stop": 84
+        },
+        {
+          "start": 85,
+          "stop": 130
+        },
+        {
+          "start": 131,
+          "stop": 167
+        },
+        {
+          "start": 168,
+          "stop": 204
+        },
+        {
+          "start": 205,
+          "stop": 249
+        },
+        {
+          "start": 250,
+          "stop": 293
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.TensorFamily",
+      "path": "ModNullProof/TensorFamily.lean",
+      "source_sha256": "8b8bb36a2a03d753fbee3a4ec4a7eb4961114771dcc712d8dc9f8b050289f6de",
+      "source_bytes": 913,
+      "retained_body_sha256": "b642ec5794c5942c08367a76a180c9a57c7d7dc780367a4fddebdb800727a0a6",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 69
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 69
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.CompactCosets",
+      "path": "ModNullProof/CompactCosets.lean",
+      "source_sha256": "f14a347598c9c6c20a066fc1bf6ce0c99f97e74cdbed9a51adf3755dc4db2c46",
+      "source_bytes": 3084,
+      "retained_body_sha256": "7c91b34f0a84bab1fbca98b6dcfea772cd0f9a89542fa44cf8a44ba5d8108c76",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 72
+        },
+        {
+          "start": 73,
+          "stop": 105
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 72
+        },
+        {
+          "start": 73,
+          "stop": 105
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.LinearCosets",
+      "path": "ModNullProof/LinearCosets.lean",
+      "source_sha256": "895c6fdab783824bf6aa39e519e470060b94f0fe9141fc8c78dd955cb7064e5a",
+      "source_bytes": 6004,
+      "retained_body_sha256": "1a8598df2967d4cc34af40f5dd7ec9dfbed8b7fed803a2698bcc1f052432271a",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 69
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 69
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.UniversalAnalytic",
+      "path": "NoBorelUpperBound/UniversalAnalytic.lean",
+      "source_sha256": "d4ab9f4863b28b11f21eeada4dc029fc6bcc52b90f95a980f32f8962a340a07f",
+      "source_bytes": 3557,
+      "retained_body_sha256": "34b67ebf5fa3e26e193c82a7c507f02763f8e611826d9c2fea9a4562e532e84e",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.IllFoundedNonBorel",
+      "path": "NoBorelUpperBound/IllFoundedNonBorel.lean",
+      "source_sha256": "e8999ff2c5c2165f9214825b5050ed28e4569b6f0d257a79146d91f322550c3b",
+      "source_bytes": 3731,
+      "retained_body_sha256": "bc02ec7bcba011d2ec78c9c81280c3f705e8fe150d7b9da0c5cd62be06891e24",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 42
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 42
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.ConstructionFamily",
+      "path": "NoBorelUpperBound/ConstructionFamily.lean",
+      "source_sha256": "949da4833040fe4657c98429342191dffce263e7472675973ab4d1f68ca5a9ce",
+      "source_bytes": 3360,
+      "retained_body_sha256": "59462095195593b408748c9619e84d166174180799082fb9fadaaf0fa924d4c2",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 37
+        },
+        {
+          "start": 38,
+          "stop": 81
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 37
+        },
+        {
+          "start": 38,
+          "stop": 81
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryProduct",
+      "path": "NoBorelUpperBound/CategoryProduct.lean",
+      "source_sha256": "18618060b54ecb0d8ea321d66c5bacf9ae88e2ffa66911843d90ee14358caf29",
+      "source_bytes": 4193,
+      "retained_body_sha256": "1007d16467d805779ed04f025c325d8b0f0bf67f92b3b2db35c16c645f53f432",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 45
+        },
+        {
+          "start": 46,
+          "stop": 82
+        },
+        {
+          "start": 83,
+          "stop": 131
+        },
+        {
+          "start": 132,
+          "stop": 153
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 45
+        },
+        {
+          "start": 46,
+          "stop": 82
+        },
+        {
+          "start": 83,
+          "stop": 131
+        },
+        {
+          "start": 132,
+          "stop": 153
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryTransfer",
+      "path": "NoBorelUpperBound/CategoryTransfer.lean",
+      "source_sha256": "bbb9f5990a4b04ff5e8a8a08d886b6abee813c9089652b4452eaf833a9115053",
+      "source_bytes": 7255,
+      "retained_body_sha256": "37378908d993e4ffe3bc0e7cb0ec949cc871dd12e696e79c157819087301d0f6",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 97
+        },
+        {
+          "start": 98,
+          "stop": 119
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 97
+        },
+        {
+          "start": 98,
+          "stop": 119
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryQuantifier",
+      "path": "NoBorelUpperBound/CategoryQuantifier.lean",
+      "source_sha256": "8f51fe82edf398dc1b5fd7119eca0810901af590456bce2c544370366ce035ba",
+      "source_bytes": 5375,
+      "retained_body_sha256": "73c509c1c06acb907dccc66f1a52f21f43ee6a7e60fce230d989e5a5f5512626",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 96
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 96
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryMembership",
+      "path": "NoBorelUpperBound/CategoryMembership.lean",
+      "source_sha256": "60a46e78ca408af5328747039d3d33da3d49a7acd24f27b28cf5120a900d17fc",
+      "source_bytes": 5924,
+      "retained_body_sha256": "e74e5366f31b9fd546ace51e46d022c59a9522baf462c22a0bdc8b2ecc9fbd4e",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 112
+        },
+        {
+          "start": 113,
+          "stop": 158
+        },
+        {
+          "start": 159,
+          "stop": 211
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 56
+        },
+        {
+          "start": 57,
+          "stop": 112
+        },
+        {
+          "start": 113,
+          "stop": 158
+        },
+        {
+          "start": 159,
+          "stop": 211
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryAnalytic",
+      "path": "NoBorelUpperBound/CategoryAnalytic.lean",
+      "source_sha256": "08eaa3ddfc3bf5aa819c2c3e44be72fdc13955fb327f94ab5258ae6a399dc374",
+      "source_bytes": 7234,
+      "retained_body_sha256": "b8bc2415ddd0d264d68f11d7533e0642323e3ebb32074d6857ec4742d9956b6f",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 85
+        },
+        {
+          "start": 86,
+          "stop": 129
+        },
+        {
+          "start": 130,
+          "stop": 175
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 85
+        },
+        {
+          "start": 86,
+          "stop": 129
+        },
+        {
+          "start": 130,
+          "stop": 175
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.BaireContinuity",
+      "path": "NoBorelUpperBound/BaireContinuity.lean",
+      "source_sha256": "3c363fa4cc2f69734c07c0cd78cbc8cf5773a721a6769037bae6d27259431f55",
+      "source_bytes": 2348,
+      "retained_body_sha256": "3c16be57cc2ed838820fa4d49c0e6259a6cd00eee6bbec0ed8900c3d1d54ee03",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 96
+        },
+        {
+          "start": 97,
+          "stop": 141
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 96
+        },
+        {
+          "start": 97,
+          "stop": 141
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.BorelEvaluator",
+      "path": "NoBorelUpperBound/BorelEvaluator.lean",
+      "source_sha256": "245d3e40dcd6ace2a08cdd05dc6b39cc2cf1ba46b775cda850369c038276b26b",
+      "source_bytes": 3585,
+      "retained_body_sha256": "89209fe6f83f6610679f80efc2e57f08253608d483c8c688c4363e470936a011",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 68
+        },
+        {
+          "start": 69,
+          "stop": 127
+        },
+        {
+          "start": 128,
+          "stop": 170
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 68
+        },
+        {
+          "start": 69,
+          "stop": 127
+        },
+        {
+          "start": 128,
+          "stop": 170
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.GenericRepresentation",
+      "path": "NoBorelUpperBound/GenericRepresentation.lean",
+      "source_sha256": "27d135bac38903e17703f223d45a81d407cb0e26638242167e69689b4e7cc46f",
+      "source_bytes": 3030,
+      "retained_body_sha256": "422be369cedada62d98c197ac35fae912715569225d4c2583b344d75e5ae7cb5",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 80
+        },
+        {
+          "start": 81,
+          "stop": 130
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 40
+        },
+        {
+          "start": 41,
+          "stop": 80
+        },
+        {
+          "start": 81,
+          "stop": 130
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.CategoryTransferFinal",
+      "path": "NoBorelUpperBound/CategoryTransferFinal.lean",
+      "source_sha256": "1f43e331e8050b5179b9809096447af489f084850f867f16c937affda68d444a",
+      "source_bytes": 1984,
+      "retained_body_sha256": "89a4f7e01583a3ffbbb10db89f025f5e6200f73be962496c7cec514a5a5bc7b6",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 88
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 88
+        }
+      ]
+    },
+    {
+      "module": "NoBorelUpperBound.Main",
+      "path": "NoBorelUpperBound/Main.lean",
+      "source_sha256": "903db47a30b4aae6f526e49a3f8fe58169eeb854361e060eb61ef5e4f1b02217",
+      "source_bytes": 2502,
+      "retained_body_sha256": "71ef139eafd4a86693546fa245ff1195195aa9fa91cb48d79cecbfa7f77b2e31",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 43
+        },
+        {
+          "start": 44,
+          "stop": 90
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 43
+        },
+        {
+          "start": 44,
+          "stop": 90
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.OrdinaryUnbounded",
+      "path": "ModNullProof/OrdinaryUnbounded.lean",
+      "source_sha256": "2c35db2184fe7030fe50c9c046f896609df81a9fbbb0f4843172475d8b73044c",
+      "source_bytes": 3544,
+      "retained_body_sha256": "3ef502552c5cee77003d6529555f1a8e617b4487994fc3a2d2b2776639032ac5",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 32
+        },
+        {
+          "start": 33,
+          "stop": 65
+        },
+        {
+          "start": 66,
+          "stop": 95
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 32
+        },
+        {
+          "start": 33,
+          "stop": 65
+        },
+        {
+          "start": 66,
+          "stop": 95
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.CompactUnbounded",
+      "path": "ModNullProof/CompactUnbounded.lean",
+      "source_sha256": "2dfbaf9e8ad092f9c7be6aa8aec1039c92fdb2a9cfea7dd9a3795f4eda0b74bf",
+      "source_bytes": 634,
+      "retained_body_sha256": "f3c104450ffee5d55eff6908d8966795030a6b932824edbecb91a88c4bafcf7b",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 33
+        },
+        {
+          "start": 34,
+          "stop": 71
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 33
+        },
+        {
+          "start": 34,
+          "stop": 71
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.CoordinateBounds",
+      "path": "ModNullProof/CoordinateBounds.lean",
+      "source_sha256": "0d064f7a70211023bb03463d59373df658e1e98786933236c892456c9ec8f0c8",
+      "source_bytes": 3125,
+      "retained_body_sha256": "2222c560d21660302fcec4ff73d79e624de4493394dc667cc81556b77640abc9",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 75
+        },
+        {
+          "start": 76,
+          "stop": 124
+        },
+        {
+          "start": 125,
+          "stop": 182
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 31
+        },
+        {
+          "start": 32,
+          "stop": 75
+        },
+        {
+          "start": 76,
+          "stop": 124
+        },
+        {
+          "start": 125,
+          "stop": 182
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.BaireOneComplexity",
+      "path": "ModNullProof/BaireOneComplexity.lean",
+      "source_sha256": "93033f3503fc39940d13b7ed757bfa264b02ac38def600db551f2bad89f2d915",
+      "source_bytes": 7302,
+      "retained_body_sha256": "226b1cf70a5e590c47800990f34bb4e258697d7bdc3812e82790c7a2d814fb84",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 35
+        },
+        {
+          "start": 36,
+          "stop": 76
+        },
+        {
+          "start": 77,
+          "stop": 122
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 35
+        },
+        {
+          "start": 36,
+          "stop": 76
+        },
+        {
+          "start": 77,
+          "stop": 122
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.WeakTensorCoordinates",
+      "path": "ModNullProof/WeakTensorCoordinates.lean",
+      "source_sha256": "26af0063b4a7ff859a507a57e5f9f2f03ab6987f85a958aee102c36265f1bb4a",
+      "source_bytes": 4478,
+      "retained_body_sha256": "f95722a43907812075d632c670bf3e35f283dd6bded814418bd676be07dd2f10",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 75
+        },
+        {
+          "start": 76,
+          "stop": 121
+        },
+        {
+          "start": 122,
+          "stop": 153
+        },
+        {
+          "start": 154,
+          "stop": 204
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 75
+        },
+        {
+          "start": 76,
+          "stop": 121
+        },
+        {
+          "start": 122,
+          "stop": 153
+        },
+        {
+          "start": 154,
+          "stop": 204
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.WeakTensorRank",
+      "path": "ModNullProof/WeakTensorRank.lean",
+      "source_sha256": "5137ddd658ca4e76c8050f549847a9289cf8d246fe10141ab536d3e102ea4948",
+      "source_bytes": 8890,
+      "retained_body_sha256": "9ea990723adcaef2ea94d17ec2ee8b2dbe337e708db94c71a64ce6575c72d632",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 81
+        },
+        {
+          "start": 82,
+          "stop": 134
+        },
+        {
+          "start": 135,
+          "stop": 171
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 81
+        },
+        {
+          "start": 82,
+          "stop": 134
+        },
+        {
+          "start": 135,
+          "stop": 171
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.WeakTensorCharts",
+      "path": "ModNullProof/WeakTensorCharts.lean",
+      "source_sha256": "aca7d20f20af9788a610a515475eb98b6e7a7021603237818b7469244ee025b1",
+      "source_bytes": 6960,
+      "retained_body_sha256": "86d146d2829986f556e7c55b2f120aed8719e8b8f70381efb564f391a7ac2e16",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        },
+        {
+          "start": 35,
+          "stop": 80
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 34
+        },
+        {
+          "start": 35,
+          "stop": 80
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.KSigmaComplexity",
+      "path": "ModNullProof/KSigmaComplexity.lean",
+      "source_sha256": "9b2394010e52253fb5272664a157c0b9fdf49cc904f32c856a2a9c849a360d4f",
+      "source_bytes": 1892,
+      "retained_body_sha256": "3847545753411f36ffc3232bcac1777f4b849c0da99b6b70a420ad10cbca6779",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 35
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 35
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.TensorCompact",
+      "path": "ModNullProof/TensorCompact.lean",
+      "source_sha256": "d5b3b1bb65298fbfc9ad9c188e40063a122d8a5ec654e391409f37f9c0fe824e",
+      "source_bytes": 5937,
+      "retained_body_sha256": "46f9732af93b30108199f9774b81c974d154b985f126608bee126929c6cbc58a",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 78
+        },
+        {
+          "start": 79,
+          "stop": 115
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 41
+        },
+        {
+          "start": 42,
+          "stop": 78
+        },
+        {
+          "start": 79,
+          "stop": 115
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.CompactFamily",
+      "path": "ModNullProof/CompactFamily.lean",
+      "source_sha256": "1fa481dc4d24ec6a42624be52114630e3ce58a7a94062dcdeab6f13771c8618e",
+      "source_bytes": 1253,
+      "retained_body_sha256": "c861cbfe4731c50e27bb0ccb641e66b2c74ddb74845efa14537260ce2c4f4520",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 70
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 70
+        }
+      ]
+    },
+    {
+      "module": "Solutions.CompactCosetUnboundedness",
+      "path": "Solutions/CompactCosetUnboundedness.lean",
+      "source_sha256": "ccbd3bc080910872d9ce3a973655ab7597d086340a68c5364dd3bd2e91c3ea2f",
+      "source_bytes": 610,
+      "retained_body_sha256": "a572b50a6c85a9eb8a78019bf30020420da3ea864b50aa8d014a694cb2f261bd",
+      "scope_depth": 2,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 33
+        }
+      ],
+      "parser_import_spans": [
+        {
+          "start": 0,
+          "stop": 33
+        }
+      ]
+    }
+  ],
+  "imports": [
+    "Definitions.Def_ModNullCompact20261109",
+    "Definitions.Def_ModNullCore20261109",
+    "Definitions.Def_NoBorelUpperBound20261101",
+    "Definitions.Def_NoBorelUpperBoundTransfer20261101",
+    "Definitions.Def_NoUniversalFSigma261031052",
+    "Mathlib.Algebra.BigOperators.Group.List.Basic",
+    "Mathlib.Analysis.Normed.Group.AddCircle",
+    "Mathlib.Analysis.Normed.Group.FunctionSeries",
+    "Mathlib.Analysis.Normed.Operator.Bilinear",
+    "Mathlib.Analysis.Normed.Operator.Mul",
+    "Mathlib.Analysis.Normed.Operator.Prod",
+    "Mathlib.Analysis.Normed.Ring.InfiniteSum",
+    "Mathlib.Analysis.SpecificLimits.Basic",
+    "Mathlib.Analysis.SpecificLimits.Normed",
+    "Mathlib.Data.Fintype.EquivFin",
+    "Mathlib.Data.List.OfFn",
+    "Mathlib.LinearAlgebra.Basis.Basic",
+    "Mathlib.LinearAlgebra.Dual.Lemmas",
+    "Mathlib.LinearAlgebra.FiniteDimensional.Basic",
+    "Mathlib.LinearAlgebra.Matrix.Adjugate",
+    "Mathlib.LinearAlgebra.Matrix.NonsingularInverse",
+    "Mathlib.Logic.Equiv.List",
+    "Mathlib.MeasureTheory.Constructions.Polish.Basic",
+    "Mathlib.MeasureTheory.Constructions.Polish.StronglyMeasurable",
+    "Mathlib.MeasureTheory.Group.Arithmetic",
+    "Mathlib.MeasureTheory.MeasurableSpace.Constructions",
+    "Mathlib.MeasureTheory.Measure.Haar.Basic",
+    "Mathlib.Tactic",
+    "Mathlib.Topology.Algebra.Group.Basic",
+    "Mathlib.Topology.Algebra.InfiniteSum.Constructions",
+    "Mathlib.Topology.Algebra.InfiniteSum.NatInt",
+    "Mathlib.Topology.Algebra.InfiniteSum.Real",
+    "Mathlib.Topology.Algebra.Module.Basic",
+    "Mathlib.Topology.Baire.BaireMeasurable",
+    "Mathlib.Topology.Baire.CompleteMetrizable",
+    "Mathlib.Topology.Baire.Lemmas",
+    "Mathlib.Topology.Compactness.Compact",
+    "Mathlib.Topology.GDelta.MetrizableSpace",
+    "Mathlib.Topology.Instances.AddCircle.Real",
+    "Mathlib.Topology.Instances.Matrix",
+    "Mathlib.Topology.Instances.Real.Lemmas",
+    "Mathlib.Topology.List",
+    "Mathlib.Topology.MetricSpace.PiNat",
+    "Mathlib.Topology.MetricSpace.Polish"
+  ],
+  "published_preamble": "import Definitions.Def_ModNullCompact20261109\n\nset_option autoImplicit false\n\n",
+  "published_formal_statement": "theorem ModNullUniversality.compact_coset_unboundedness :\n    ∃ K : ModNullUniversality.CompactMetrizableHaarGroup,\n      ModNullUniversality.IsAbelian K ∧\n      ∃ H : ModNullUniversality.WF → Subgroup K.Carrier,\n        ModNullUniversality.LowComplexityFamily K H ∧\n        ∀ F : ModNullUniversality.StandardBorelEquivalence,\n          ∃ T : ModNullUniversality.WF,\n            ¬ ModNullUniversality.BorelReducible\n              (ModNullUniversality.CosetRelation K (H T)) F.rel := by sorry\n",
+  "only_source_edits": "Lean-parsed import spans replaced by spaces; complete bodies retained",
+  "local_compile_seconds": 42.11,
+  "typecheck_seconds": 13.0,
+  "exact_target_type": true,
+  "standard_axioms_only": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiled_sha256": "68df3abbf7d972b0995646b2b19a2b8862511d294d5522a53b1fd45de0feb61f",
+  "release_solution": "Prove2Me/CompactCosetUnboundedness.lean"
+}

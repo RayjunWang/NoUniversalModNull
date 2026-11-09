@@ -1,0 +1,135 @@
+{
+  "target_key": "haar",
+  "target_id": "b11bbd4e-c710-48b4-ba44-5e07c461453b",
+  "target_name": "ModNullUniversality.haar_amplification",
+  "root_module": "Solutions.HaarAmplification",
+  "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "solution": "upload/HaarAmplification.lean",
+  "sha256": "1b27a251e88d999f7bb8dd3c78c6cd47b59174047061d7b84b32b776387136a6",
+  "bytes": 16696,
+  "modules": [
+    {
+      "module": "ModNullProof.AEPowerRealCodes",
+      "path": "ModNullProof/AEPowerRealCodes.lean",
+      "source_sha256": "d76a3239ef7b9a18af39c1ff73f4cc9fe370c33b536749e649cf4d6fad683257",
+      "source_bytes": 5853,
+      "retained_body_sha256": "d8298dfb45364aec57afa25b4cae3b98ed0a6e8e71b722d35aacef5972498074",
+      "scope_depth": 1,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 53
+        },
+        {
+          "start": 54,
+          "stop": 107
+        },
+        {
+          "start": 108,
+          "stop": 150
+        },
+        {
+          "start": 151,
+          "stop": 214
+        },
+        {
+          "start": 215,
+          "stop": 276
+        },
+        {
+          "start": 277,
+          "stop": 336
+        },
+        {
+          "start": 337,
+          "stop": 381
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.AEPowerBorel",
+      "path": "ModNullProof/AEPowerBorel.lean",
+      "source_sha256": "4f421623948e71f9ff02dc419afd53220bc8f5872a69a9e617f622665ec07856",
+      "source_bytes": 5289,
+      "retained_body_sha256": "04393afbb4df7063c2ddecbee41ccbb8c3b38ffcd690852dd4cc4723a3e4d949",
+      "scope_depth": 1,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 36
+        },
+        {
+          "start": 37,
+          "stop": 79
+        },
+        {
+          "start": 80,
+          "stop": 121
+        }
+      ]
+    },
+    {
+      "module": "ModNullProof.HaarAmplification",
+      "path": "ModNullProof/HaarAmplification.lean",
+      "source_sha256": "b1805b4fb9addfeb2e8312039a97a044044d7cbe391876888f60972fe3402ba2",
+      "source_bytes": 3052,
+      "retained_body_sha256": "37811f87331a6a8130a8df9bebb54da300cdbb595140da2bb5997bc929df37b4",
+      "scope_depth": 1,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 32
+        },
+        {
+          "start": 33,
+          "stop": 78
+        },
+        {
+          "start": 79,
+          "stop": 118
+        }
+      ]
+    },
+    {
+      "module": "Solutions.HaarAmplification",
+      "path": "Solutions/HaarAmplification.lean",
+      "source_sha256": "3a597fb054de37f52e78f029c4d05de69d6c017ada5b8a3691a1623809afd2f0",
+      "source_bytes": 702,
+      "retained_body_sha256": "bdd5919f2f18a4f02e3b0d8b6d93e7c5fbb9931134610b7097734be289a96f04",
+      "scope_depth": 1,
+      "import_spans": [
+        {
+          "start": 0,
+          "stop": 37
+        }
+      ]
+    }
+  ],
+  "imports": [
+    "Definitions.Def_ModNullCompact20261109",
+    "Definitions.Def_ModNullCore20261109",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan",
+    "Mathlib.Analysis.SpecificLimits.Basic",
+    "Mathlib.MeasureTheory.Constructions.BorelSpace.Order",
+    "Mathlib.MeasureTheory.Constructions.Polish.EmbeddingReal",
+    "Mathlib.MeasureTheory.Function.L1Space.AEEqFun",
+    "Mathlib.MeasureTheory.Group.Prod",
+    "Mathlib.MeasureTheory.Integral.Prod",
+    "Mathlib.MeasureTheory.Measure.Prod",
+    "Mathlib.MeasureTheory.Measure.SeparableMeasure"
+  ],
+  "published_preamble": "import Definitions.Def_ModNullCompact20261109\n\nset_option autoImplicit false\n\n",
+  "published_formal_statement": "theorem ModNullUniversality.haar_amplification\n    (K : ModNullUniversality.CompactMetrizableHaarGroup)\n    (F : ModNullUniversality.StandardBorelEquivalence)\n    (hF : Nonempty F.Carrier) :\n    ∃ Q : ModNullUniversality.StandardBorelEquivalence,\n      ∀ H : Subgroup K.Carrier, MeasurableSet (H : Set K.Carrier) →\n        ∀ C : Set K.Carrier, MeasurableSet C → K.haar C = 1 →\n          ModNullUniversality.BorelReducible\n            (fun x y : C => ModNullUniversality.CosetRelation K H x.val y.val) F.rel →\n          ModNullUniversality.BorelReducible (ModNullUniversality.CosetRelation K H) Q.rel := by sorry\n",
+  "only_source_edits": "Lean-parsed import spans replaced by spaces; complete bodies retained",
+  "local_compile_seconds": 11.95,
+  "typecheck_seconds": 10.67,
+  "exact_target_type": true,
+  "standard_axioms_only": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiled_sha256": "1b27a251e88d999f7bb8dd3c78c6cd47b59174047061d7b84b32b776387136a6",
+  "release_solution": "Prove2Me/HaarAmplification.lean"
+}

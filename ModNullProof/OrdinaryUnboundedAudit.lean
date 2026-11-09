@@ -1,0 +1,6 @@
+import ModNullProof.OrdinaryUnbounded
+
+#print axioms ModNullUniversality.LinearCosets.coset_iff_theta
+#print axioms ModNullUniversality.LinearCosets.tensor_family_unbounded
+#print axioms ModNullUniversality.CompactTensor.treeOperator_injective
+#print axioms ModNullUniversality.CompactTensor.source_family_unbounded
