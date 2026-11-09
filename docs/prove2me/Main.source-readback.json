@@ -1,0 +1,18 @@
+{
+  "theorem_name": "ModNullUniversality.theorem1_1",
+  "theorem_id": "1849a16a-9dde-4a75-b04d-f08aac7bfab3",
+  "submission_id": "ec28315c-28dd-44e1-a3ed-c609e0b44179",
+  "status": "ACCEPTED",
+  "theorem_status": "Proved",
+  "sha256": "e5c149167ebde12e5615bdf637f0a11c9d2bcb4089afb521b8215695ef1132d9",
+  "bytes": 221657,
+  "readback_sha256_matches": true,
+  "local_compile_seconds": 41.2,
+  "exact_target_type": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "release_solution": "Prove2Me/Main.lean"
+}

@@ -1,0 +1,69 @@
+{
+  "verified_at_utc": "2026-11-09T09:59:41.458882+00:00",
+  "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "proofs": [
+    {
+      "theorem_name": "ModNullUniversality.haar_amplification",
+      "theorem_id": "b11bbd4e-c710-48b4-ba44-5e07c461453b",
+      "submission_id": "0308963b-896a-406a-8ca5-7d4a80f4b11b",
+      "status": "ACCEPTED",
+      "theorem_status": "Proved",
+      "sha256": "1b27a251e88d999f7bb8dd3c78c6cd47b59174047061d7b84b32b776387136a6",
+      "bytes": 16696,
+      "readback_sha256_matches": true,
+      "local_compile_seconds": 11.95,
+      "exact_target_type": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "release_solution": "Prove2Me/HaarAmplification.lean"
+    },
+    {
+      "theorem_name": "ModNullUniversality.compact_coset_unboundedness",
+      "theorem_id": "c7e304ee-20dd-402d-86fa-6d01ada79173",
+      "submission_id": "e6e9bddd-afdb-42c0-97a6-88a2ef538ee0",
+      "status": "ACCEPTED",
+      "theorem_status": "Proved",
+      "sha256": "68df3abbf7d972b0995646b2b19a2b8862511d294d5522a53b1fd45de0feb61f",
+      "bytes": 204019,
+      "readback_sha256_matches": true,
+      "local_compile_seconds": 42.11,
+      "exact_target_type": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "release_solution": "Prove2Me/CompactCosetUnboundedness.lean"
+    },
+    {
+      "theorem_name": "ModNullUniversality.theorem1_1",
+      "theorem_id": "1849a16a-9dde-4a75-b04d-f08aac7bfab3",
+      "submission_id": "ec28315c-28dd-44e1-a3ed-c609e0b44179",
+      "status": "ACCEPTED",
+      "theorem_status": "Proved",
+      "sha256": "e5c149167ebde12e5615bdf637f0a11c9d2bcb4089afb521b8215695ef1132d9",
+      "bytes": 221657,
+      "readback_sha256_matches": true,
+      "local_compile_seconds": 41.2,
+      "exact_target_type": true,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "release_solution": "Prove2Me/Main.lean"
+    }
+  ],
+  "proposal": {
+    "id": "64fe8c53-821d-476f-adfe-19f21c5d18f6",
+    "name": "No Borel upper bound for the $\\Delta^0_3$ equivalence relations modulo null sets",
+    "mission_type": "OpenProblem",
+    "visibility": "public",
+    "status": "In review",
+    "mission_id": null
+  }
+}

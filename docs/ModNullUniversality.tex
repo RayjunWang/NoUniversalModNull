@@ -1,0 +1,505 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\T}{\mathbb T}
+\newcommand{\Lzero}{L^0}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\WF}{\mathrm{WF}}
+\newcommand{\Tr}{\mathrm{Tr}}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\sym}{sym}
+\DeclareMathOperator{\adj}{adj}
+\title{No Borel upper bound for the $\Delta^0_3$ equivalence relations modulo null sets}
+\author{Ruijun Wang}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+We show that the $\Delta^0_3$ equivalence relations have no common Borel upper bound under measure reducibility. The witnesses are coset relations on one fixed compact metrizable abelian group, with one fixed Haar probability measure. Thus there is no universal $\Pi^0_\alpha$ or $\Sigma^0_\alpha$ equivalence relation modulo null sets for any countable ordinal $\alpha\geq3$.
+\end{abstract}
+
+\section{Introduction}
+Borel reducibility compares classification problems by the regularity of
+their assignments of complete invariants. Gao's book \cite{Gao} gives a
+systematic account of this approach and its benchmark equivalence relations.
+Rosendal proved that $\ell_\infty$ is universal for $K_\sigma$ equivalence
+relations \cite[Theorem 17 and Proposition 19]{Rosendal}. Tightness of Borel
+probability measures consequently makes $\ell_\infty$ universal for
+$F_\sigma$ equivalence relations after restriction to a conull set.
+
+This measure-theoretic conclusion is compatible with the failure of ordinary
+$F_\sigma$ universality. The author of current paper proved that the $F_\sigma$ equivalence relations
+have no common Borel upper bound, already for real linear-subspace cosets on
+a fixed copy of $\ell_1$ \cite{Wang}. One might therefore expect measure
+restriction to restore universality at further Borel levels. We prove that
+it does not do so at level three.
+
+\begin{theorem}\label{thm:main}
+There exist a compact metrizable abelian group $K$, its normalized Haar
+measure $\lambda$, and a family $(H_T)_{T\in\WF}$ of $\Delta^0_3$ subgroups
+of $K$ with the following property. For every Borel equivalence relation $F$
+on a standard Borel space, there is $T\in\WF$ such that
+\[
+ E_{H_T}^K\mathbin{\upharpoonright}C\not\leq_B F
+ \quad\text{for every Borel $\lambda$-conull set }C\subseteq K.
+\]
+Here $x\,E_H^K\,y$ means $x^{-1}y\in H$. Each $E_{H_T}^K$ is
+$\Delta^0_3$ in $K^2$; more precisely, its graph is a difference of two
+$F_\sigma$ sets.
+\end{theorem}
+
+The quantifiers are stronger than the failure of a universal relation
+inside $\Pi^0_3$: even a target of arbitrary Borel complexity cannot bound
+all the indicated conull restrictions. The set $C$ is not required to be
+invariant, so the theorem also rules out universality with that additional
+requirement.
+
+The almost-everywhere power used below is not a new construction:
+Tsirelson defines it in \cite[Section 1, p.~3]{Tsirelson}, and jointly
+Borel representatives for $L^0$ are discussed in
+\cite[Section 0]{GTW}. We give the needed measurability argument explicitly.
+The ordinary unboundedness input is the particular tensor family in
+\cite[Corollary 6.1 and its proof]{Wang}. The additional steps are a
+$\Delta^0_3$ realization of that family inside a compact group and the
+passage from conull reductions to ordinary reductions by Haar translation.
+
+This paper is a collaboration with artificial intelligence. The AI model is gpt 6. The AI proves the main theorem under human suggestions and writes the main body of early drafts. The author revises the paper and improves readability. The author has reviewed all AI-generated content.
+
+\section{Preliminaries and the meaning of modulo null sets}
+A Polish space is a separable completely metrizable space. A standard Borel
+space is a set equipped with the Borel sets of some Polish topology.
+A Borel equivalence relation on $X$ is an equivalence relation whose graph
+is Borel in $X^2$. A Borel reduction $f$ of $E$ to $F$ satisfies
+\[
+ x\,E\,y\quad\Longleftrightarrow\quad f(x)\,F\,f(y)
+ \qquad(x,y\in X).
+\]
+We write $E\leq_B F$ if such a map exists. The relation $E$ is smooth
+if it reduces to equality on $2^{\N}$.
+
+The Borel hierarchy starts with open sets $\Sigma^0_1$ and closed sets
+$\Pi^0_1$. For countable $\alpha>1$, $\Sigma^0_\alpha$ consists of countable
+unions of sets in $\bigcup_{\beta<\alpha}\Pi^0_\beta$, and $\Pi^0_\alpha$
+consists of their complements. Put
+$\Delta^0_\alpha=\Sigma^0_\alpha\cap\Pi^0_\alpha$.
+Thus $\Sigma^0_2=F_\sigma$, $\Pi^0_2=G_\delta$, and
+$\Pi^0_3=F_{\sigma\delta}$. A difference of two $F_\sigma$ sets is
+$\Delta^0_3$. A $K_\sigma$ set is a countable union of compact sets.
+These distinctions refer to the specified topologies.
+
+\begin{definition}
+For a Borel probability measure $\mu$ on $X$, write $E\leq_\mu F$ if
+there is a Borel set $C\subseteq X$ with $\mu(C)=1$ and
+$E\mathbin{\upharpoonright}C\leq_B F$. Write $E\leq_M F$ if
+$E\leq_\mu F$ for every Borel probability measure $\mu$ on $X$.
+A relation $U$ in a class $\Gamma$ is universal modulo null sets for
+$\Gamma$ if every equivalence relation in $\Gamma$ is $\leq_M U$.
+\end{definition}
+
+This is the conull-domain convention used for measure reducibility;
+see \cite[Introduction, Basic notions]{CM}. It demands the reduction
+identity for \emph{every pair in $C^2$}, not merely for
+$\mu\times\mu$-almost every pair. The latter condition is substantially
+weaker. Neither the set $C$ nor the reducing map has to work for all
+measures simultaneously. Invariance of $C$ is not part of this definition.
+
+We use Haar probability on compact groups, tightness of Borel probability
+measures on Polish spaces, and Borel uniformization for Borel relations
+with $\sigma$-compact sections. We also use two elementary descriptive
+facts. A pointwise limit of continuous real functions is Baire class one;
+the inverse image of an open set under such a function is $F_\sigma$.
+An integral of a bounded jointly Borel function over a fixed probability
+measure is a Borel function of its parameters. Standard references are
+\cite{Kechris,Gao}.
+
+\section{Almost-everywhere powers and Haar translation}
+\begin{lemma}[Borel almost-everywhere amplification]
+Let $(T,\lambda)$ be a standard probability space and let $F$ be a Borel
+equivalence relation on a nonempty Polish space $Y$. There is a Borel
+equivalence relation $F^{\lambda}$ on the Polish space $\Lzero(T,Y)$ of
+measurable maps modulo equality almost everywhere such that
+\[
+ [u]\,F^{\lambda}\,[v]
+ \quad\Longleftrightarrow\quad
+ u(t)\,F\,v(t)\text{ for $\lambda$-almost every }t.
+\]
+If $a:X\times T\to Y$ is Borel, where $X$ is standard Borel, then
+$x\mapsto[a(x,\cdot)]$ is Borel.
+\end{lemma}
+
+\begin{proof}
+Fix a compatible complete metric $d\leq 1$ on $Y$. The metric
+\[
+ \rho([u],[v])=\int_T d(u(t),v(t))\,d\lambda(t)
+\]
+metrizes convergence in measure and makes $\Lzero(T,Y)$ Polish. For
+completeness, a $\rho$-Cauchy sequence has a subsequence whose successive
+$\rho$-distances have summable suitably fast bounds; Markov's inequality
+and the Borel--Cantelli lemma make that subsequence pointwise Cauchy
+almost everywhere. Completeness of $Y$ gives its measurable limit,
+and convergence in $\rho$ follows by bounded convergence. Separability
+follows from simple functions whose values lie in a fixed countable
+dense subset of $Y$ and whose level sets lie in a fixed countable
+algebra generating the Borel sets of $T$ modulo null sets.
+
+Choose such a countable $\rho$-dense family $(q_j)_{j\in\mathbb N}$
+of Borel maps $T\to Y$. For $z\in\Lzero(T,Y)$ and $n\geq 1$ put
+\[
+ j_n(z)=\min\{j:\rho(z,[q_j])<2^{-3n}\}.
+\]
+Each $j_n$ is Borel. Consequently
+$s_n(z,t)=q_{j_n(z)}(t)$ is jointly Borel. Fix $y_0\in Y$ and let
+$e(z,t)$ be the limit of $(s_n(z,t))_n$ when that sequence converges
+in $Y$, and $y_0$ otherwise. Its convergence set is Borel by the
+Cauchy criterion and completeness of $d$, and the limit map is Borel;
+hence $e$ is jointly Borel.
+
+For any representative $u$ of $z$, Markov's inequality gives
+\[
+ \lambda\{t:d(s_n(z,t),u(t))>2^{-n}\}<2^{-2n}.
+\]
+The Borel--Cantelli lemma therefore gives $e(z,t)=u(t)$ almost
+everywhere. Thus $e(z,\cdot)$ is a representative of $z$.
+It follows that $F^\lambda$ is well defined and that
+\[
+ z\,F^\lambda\,w
+ \quad\Longleftrightarrow\quad
+ \int_T \mathbf 1_F(e(z,t),e(w,t))\,d\lambda(t)=1.
+\]
+The displayed integral is a Borel function of $(z,w)$, by the usual
+monotone-class theorem for Borel parameter integrals. Reflexivity,
+symmetry, and transitivity hold after taking the intersection of the
+finitely many conull sets needed for each assertion.
+
+Finally, if $a:X\times T\to Y$ is Borel, then for every $j$ the map
+\[
+ x\longmapsto\rho([a(x,\cdot)],[q_j])
+ =\int_T d(a(x,t),q_j(t))\,d\lambda(t)
+\]
+is Borel. The open balls about the dense family $([q_j])_j$ form a
+countable base, proving the last assertion.
+\end{proof}
+
+\begin{lemma}[Haar amplification]
+Let $K$ be a compact metrizable group, let $\lambda$ be its normalized
+Haar measure, and let $H\leq K$ be a Borel subgroup. Write
+\[
+ x\,E_H\,y\quad\Longleftrightarrow\quad x^{-1}y\in H.
+\]
+Let $F$ be a Borel equivalence relation on a Polish space $Y$.
+If a Borel $\lambda$-conull set $C\subseteq K$ satisfies
+$E_H\mathbin{\upharpoonright}C\leq_B F$, then
+\[
+ E_H\leq_B F^\lambda.
+\]
+In particular, for fixed $F$ and $K$, the target on the right does
+not depend on $H$, $C$, or the reduction on $C$.
+\end{lemma}
+
+\begin{proof}
+Let $f:C\to Y$ be a Borel reduction, and extend $f$ to a Borel map
+$\widetilde f:K\to Y$ by a fixed value outside $C$. Define
+\[
+ \Phi(x)=[t\mapsto\widetilde f(tx)]\in\Lzero(K,Y).
+\]
+The preceding lemma makes $\Phi$ Borel. For any fixed $x,y\in K$,
+the set $D_{x,y}=Cx^{-1}\cap Cy^{-1}$ is conull, since Haar measure
+on a compact group is also right invariant. On this set both $tx$
+and $ty$ lie in $C$, and
+\[
+ \widetilde f(tx)\,F\,\widetilde f(ty)
+ \quad\Longleftrightarrow\quad tx\,E_H\,ty
+ \quad\Longleftrightarrow\quad x^{-1}y\in H.
+\]
+If $x\,E_H\,y$, the displayed $F$-relation holds almost everywhere;
+if $x\not E_H\,y$, it fails almost everywhere. Thus $\Phi$ is a
+Borel reduction of $E_H$ to $F^\lambda$.
+\end{proof}
+
+
+\section{Compact tensor subgroups of low Borel complexity}
+Let $S$ be a countably infinite set with distinguished element $o$, put
+$A=\ell_1(S)$ and $Z=\ell_1(S\times S)$, and fix a bounded injective real
+linear operator $D:A\to A$. Write $\mathcal S$ for the symmetric finite-rank
+matrices in $Z$, and put
+\[
+ H_D=\{(K(o,o),(D\otimes\mathrm{id})K):K\in\mathcal S\}
+ \subseteq \R\times Z.
+\]
+This is a real linear subspace. The following strengthens the norm-topological
+$F_\sigma$ calculation in \cite[Lemma 4.1]{Wang}. The proof
+uses the same algebraic chart identities but changes existential charts to
+universal consistency checks before taking a compactification.
+
+Put $I=\{\ast\}\sqcup(S\times S)$, identify $\R\times Z$ with a subspace
+of $\R^I$, and let $K=\T^{I\times\N_{\geq1}}$. Define the continuous
+injective homomorphism
+\[
+ j:\R^I\longrightarrow K,
+ \qquad j(u)(i,n)=\exp(2\pi\mathrm{i}u(i)/n!).
+\]
+The topology on $\R^I$ here is the product topology. Injectivity follows
+because a real number belonging to $n!\mathbb Z$ for every $n$ must be zero.
+
+\begin{proposition}
+The subgroup $j(H_D)$ of the compact metrizable abelian group $K$ is the
+difference of two $F_\sigma$ sets. In particular, it belongs to
+$\Delta^0_3(K)$.
+\end{proposition}
+
+\begin{proof}
+We first give an algebraic test for $(\lambda,R)\in H_D$. Put
+$Q=(\mathrm{id}\otimes D)R$. A finite-rank matrix $R$ is in
+$(D\otimes\mathrm{id})(\mathcal S)$ if and only if $Q$ is symmetric.
+For completeness, choose a minimal tensor expansion
+$R=\sum_{i=1}^k u_i\otimes a_i$, in which both families are linearly
+independent. The two factor spaces of
+$Q=\sum_i u_i\otimes Da_i$ are $\operatorname{span}(u_i)$ and
+$\operatorname{span}(Da_i)$. Injectivity of $D$ and symmetry of $Q$ make
+these spaces equal. Thus each $u_i$ has a preimage in
+$\operatorname{span}(a_i)$, yielding a finite-rank lift $K_0$. Symmetry of
+$(D\otimes D)K_0$ and injectivity of $D\otimes D$ on algebraic tensors
+give symmetry of $K_0$. The lift is unique.
+
+For each integer $k\geq1$ and each pair of lists of distinct coordinates
+$s_1,\ldots,s_k$ and $q_1,\ldots,q_k$ in $S$, form
+\[
+ N(R)_{ji}=\bigl(D(R(s_i,-))\bigr)(q_j),
+ \qquad
+ P(R)=\sum_{i,j=1}^k R(s_i,o)\operatorname{adj}(N(R))_{ij}R(q_j,o).
+\]
+Whenever $\operatorname{rank}R\leq k$ and $\det N(R)\ne0$, the selected
+rows are a basis of the row space. If $Q$ is symmetric, the unique
+symmetric lift $K_0$ described above satisfies
+\[
+ K_0(o,o)=P(R)/\det N(R).
+\]
+Indeed, with $a_i=R(s_i,-)$ and
+$b_i=\sum_j(N(R)^{-1})_{ij}R(q_j,-)$, one has
+$R=\sum_i Da_i\otimes b_i$, so $K_0=\sum_i a_i\otimes b_i$.
+Conversely, for every nonzero finite-rank $R$ with symmetric $Q$, there
+is at least one such chart: choose a row-space basis and then a nonzero
+coordinate minor of its linearly independent $D$-images.
+
+It follows that, on finite-rank matrices $R$, membership in $H_D$ is
+equivalent to all of the following conditions:
+\begin{enumerate}
+\item $Q=Q^{\mathsf t}$;
+\item $R=0$ implies $\lambda=0$;
+\item for every one of the countably many charts above,
+\[
+ \bigl(\operatorname{rank}R\leq k\ \&\ \det N(R)\ne0\bigr)
+ \ \Longrightarrow\ \lambda\det N(R)=P(R).
+\]
+\end{enumerate}
+The universal quantification in the third condition is essential for
+the following rank estimate.
+
+For positive integers $M,r$, let
+\[
+ B_{M,r}=\{(\lambda,R):|\lambda|+\|R\|_1\leq M,
+                       \ \operatorname{rank}R\leq r\}.
+\]
+This set is compact in the product topology: its norm bound is a closed
+condition given by all finite partial sums, every coordinate is bounded,
+and the rank condition is closed by the vanishing of minors. Consequently
+$j$ restricts to a homeomorphism of $B_{M,r}$ onto the compact subset
+$j(B_{M,r})$ of $K$.
+
+On $B_{M,r}$, each coordinate of $Q$ is Baire class one. Indeed, writing
+$D_{qt}=(De_t)(q)$, one has
+\[
+ Q(s,q)=\sum_{t\in S}D_{qt}R(s,t),
+\]
+an absolutely convergent series with bounded coefficients whose finite
+partial sums are continuous in the product topology. Every determinant
+and polynomial in finitely many such coordinates is also Baire class
+one. Hence $Q=Q^{\mathsf t}$ is $G_\delta$ on $B_{M,r}$.
+
+In each chart, $\operatorname{rank}R\leq k$ is closed and
+$\det N(R)\ne0$ is $F_\sigma$ on $B_{M,r}$. Their conjunction is
+$F_\sigma$. The equality $\lambda\det N(R)=P(R)$ is $G_\delta$.
+Its implication from that conjunction is therefore $G_\delta$, since it
+is the union of two $G_\delta$ sets. The zero-matrix condition is also
+$G_\delta$. Intersecting all these conditions shows
+\[
+ H_D\cap B_{M,r}\in\Pi^0_2(B_{M,r}).
+\]
+
+Let $B=\bigcup_{M,r}j(B_{M,r})$. This is $F_\sigma$ in $K$, and it is
+exactly the image of all pairs $(\lambda,R)$ with $R\in Z$ of finite
+rank. Each
+\[
+ j(B_{M,r})\setminus j(H_D\cap B_{M,r})
+\]
+is $F_\sigma$ relative to a compact, hence closed, subset of $K$, so it is
+$F_\sigma$ in $K$. The union $N$ of these bad sets over $M,r$ is
+$F_\sigma$ in $K$. The established algebraic test gives
+$j(H_D)=B\setminus N$, as required.
+\end{proof}
+
+
+\section{The unbounded family and the main theorem}
+Take $S=\N^{<\N}$ and $o=\varnothing$. For a downward-closed tree
+$T\subseteq S$, define a bounded operator on $A=\ell_1(S)$ by
+\[
+ (D_Ta)(s)=a(s)-2\sum_{\{n:s^\frown n\in T\}}a(s^\frown n).
+\]
+The operator $D_T$ is injective when $T$ is well founded. Indeed, a
+nonzero coordinate of a vector in its kernel has a nonzero child, and
+iteration produces an infinite branch. Define $H_{D_T}\subseteq\R\times Z$
+as in the preceding section.
+
+We use the following exact consequence of
+\cite[Corollary 6.1 and its proof]{Wang}: the additive coset relations for
+\[
+ \{0\}^2\times H_{D_T}\quad\text{on }A^2\times(\R\times Z),
+ \qquad T\in\WF,
+\]
+have no common Borel upper bound. It follows that the relations
+$E_{H_{D_T}}^{\R\times Z}$ themselves have no common Borel upper bound.
+For otherwise a common bound $F$ would give the common bound
+$=_{A^2}\times F$ for the displayed family.
+
+Put $H_T=j(H_{D_T})\leq K$, using the same group and homomorphism $j$
+for every $T$. The preceding proposition makes $H_T$ a difference of two
+$F_\sigma$ sets. As group difference is continuous, $E_{H_T}^K$ has the
+same upper bound on its Borel complexity. Moreover, the restriction of
+$j$ to $\R\times Z$, with its norm topology, is continuous and injective,
+and
+\[
+ u-v\in H_{D_T}\quad\Longleftrightarrow\quad
+ j(u)-j(v)\in j(H_{D_T}).
+\]
+Thus $j$ reduces $E_{H_{D_T}}^{\R\times Z}$ to $E_{H_T}^K$.
+Consequently the compact coset family $(E_{H_T}^K)_{T\in\WF}$ also
+has no common Borel upper bound.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Suppose some fixed Borel relation $F$ bounded a Haar-conull restriction
+of every $E_{H_T}^K$. The Haar amplification lemma would give
+\[
+ E_{H_T}^K\leq_B F^\lambda\qquad(T\in\WF).
+\]
+The relation $F^\lambda$ is one fixed Borel equivalence relation,
+contradicting the unboundedness just established. No Borel choice of the
+conull sets or reductions as $T$ varies is needed. Negating the supposed
+upper-bound property gives exactly the quantifiers in the theorem.
+\end{proof}
+
+\section{The positive $F_\sigma$ result and the hierarchy}
+In Gao's notation, $\ell_\infty$ denotes the relation on $\R^{\N}$ given by
+\[
+ x\,\ell_\infty\,y\quad\Longleftrightarrow\quad
+ \sup_n|x(n)-y(n)|<\infty.
+\]
+Its graph is $F_\sigma$.
+
+\begin{proposition}\label{prop:fsigma}
+For every $F_\sigma$ equivalence relation $E$ on a Polish space $X$
+and every Borel probability measure $\mu$ on $X$, there is an
+$E$-invariant Borel $\mu$-conull set $D$ such that
+$E\mathbin{\upharpoonright}D\leq_B\ell_\infty$.
+\end{proposition}
+\begin{proof}
+Choose compact sets $K_n\subseteq X$ whose union $C$ is conull. The
+space $C$ need not be Polish, so consider instead the Polish topological
+sum $P=\bigsqcup_nK_n$ and its continuous projection $p:P\to X$.
+The pullback relation $E'$ is $K_\sigma$: on each compact product
+$K_n\times K_m$ its graph is $F_\sigma$, hence $K_\sigma$, and there
+are only countably many such products. Rosendal's theorem gives
+$E'\leq_B\ell_\infty$. Sending $x\in C$ to its copy in the first $K_n$
+containing it gives a Borel reduction $E|C\leq_B E'$.
+
+Write $E=\bigcup_mF_m$ with each $F_m$ closed. The saturation
+\[
+ D=[C]_E=\bigcup_{m,n}\pi_X\bigl(F_m\cap(X\times K_n)\bigr)
+\]
+is $F_\sigma$, since projection over a compact second factor preserves
+closedness. It is invariant and conull. The Borel relation
+$\{(x,y)\in D\times X:y\in C\text{ and }xEy\}$ has nonempty
+$\sigma$-compact vertical sections in the Polish target $X$.
+The Arsenin--Kunugui uniformization theorem therefore gives
+a Borel map $s:D\to C$ with $xEs(x)$. Composing $s$ with the reduction
+on $C$ proves the proposition.
+\end{proof}
+
+Thus for the $\ell_\infty$ result both the usual and the invariant-domain
+formulations hold. This argument uses the $F_\sigma$ hypothesis; it is
+not a general equivalence theorem for the two formulations.
+
+\begin{corollary}\label{cor:hierarchy}
+For every countable $\alpha\geq1$, universality modulo null sets in the
+two Borel classes is given by
+\[
+\begin{array}{c|c|c}
+\toprule
+\alpha & \Sigma^0_\alpha & \Pi^0_\alpha\\
+\midrule
+1 & \text{yes: }=_{\N} & \text{yes: }=_{2^{\N}}\\
+2 & \text{yes: }\ell_\infty & \text{yes: }=_{2^{\N}}\\
+\alpha\geq3 & \text{no} & \text{no}\\
+\bottomrule
+\end{array}
+\]
+The same answers hold when the conull domains are required invariant.
+\end{corollary}
+\begin{proof}
+Open equivalence relations have at most countably many open classes,
+so reduce to $=_{\N}$. Closed and $G_\delta$ equivalence relations are
+smooth; see \cite{Gao}. These reductions use the entire domain.
+The $\Sigma^0_2$ case is Proposition~\ref{prop:fsigma}.
+For every $\alpha\geq3$, both classes contain all $\Delta^0_3$ sets.
+Theorem~\ref{thm:main} therefore rules out even a common Borel upper
+bound modulo null sets. Its negative statement already allows
+noninvariant conull domains.
+\end{proof}
+
+
+\begin{thebibliography}{9}
+\bibitem{CM} C.~T. Conley and B.~D. Miller,
+\emph{Measure reducibility of countable Borel equivalence relations},
+Ann. of Math. (2) \textbf{185} (2017), 347--402.
+%\href{https://doi.org/10.4007/annals.2017.185.2.1}{doi:10.4007/annals.2017.185.2.1}.
+\bibitem{Gao} S. Gao, \emph{Invariant Descriptive Set Theory},
+Pure and Applied Mathematics 293, CRC Press, 2009.
+\bibitem{GTW} E. Glasner, B. Tsirelson and B. Weiss,
+\emph{The automorphism group of the Gaussian measure cannot act pointwise},
+Israel J. Math. \textbf{148} (2005), 305--329.
+%\href{https://arxiv.org/abs/math/0311450}{arXiv:math/0311450}.
+\bibitem{Kechris} A.~S. Kechris, \emph{Classical Descriptive Set Theory},
+Graduate Texts in Mathematics 156, Springer, 1995.
+\bibitem{Rosendal} C. Rosendal,
+\emph{Cofinal families of Borel equivalence relations and quasiorders},
+J. Symbolic Logic \textbf{70} (2005), 1325--1340.
+%\href{https://homepages.math.uic.edu/~rosendal/PapersWebsite/CofinalFamilies.pdf}{Author's PDF}.
+\bibitem{Tsirelson} B. Tsirelson,
+\emph{Brownian local minima and other random dense countable sets}, 2005.
+%\href{https://arxiv.org/abs/math/0508414}{arXiv:math/0508414}.
+
+\bibitem{W} R. Wang,
+\emph{There is no universal $F_\sigma$ equilence relation}, arXiv:2610.31052, 2026.
+
+\bibitem{Wang} R. Wang,
+\emph{No Borel upper bound for the $F_\sigma$ equivalence relations}, arXiv:2611.02531, 2026.
+%\href{https://arxiv.org/abs/2611.02531}{arXiv:2611.02531v1}.
+\end{thebibliography}
+\noindent\begin{minipage}{\textwidth}
+\small
+\textsc{School of Mathematical Sciences and School of Pre-university,}\\
+\textsc{Dalian Minzu University}\\[0.4em]
+\textit{Email address:}\enspace
+\href{mailto:wangruijun@dlnu.edu.cn}{\texttt{wangruijun@dlnu.edu.cn}}
+\end{minipage}
+\end{document}

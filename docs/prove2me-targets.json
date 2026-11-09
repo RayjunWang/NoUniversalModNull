@@ -1,0 +1,110 @@
+{
+  "environments": {
+    "environments": [
+      {
+        "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "toolchain": "leanprover/lean4:v4.33.1",
+        "display_name": "Mathlib 0df444a (Lean v4.33.1)",
+        "is_default": true
+      },
+      {
+        "mathlib_rev": "777aaa61dcd2a1258d2b4962dbe983ede4d23b2e",
+        "toolchain": "leanprover/lean4:v4.29.0-rc3",
+        "display_name": "Mathlib 777aaa6 (Lean v4.29.0-rc3)",
+        "is_default": false
+      },
+      {
+        "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+        "toolchain": "leanprover/lean4:v4.30.0",
+        "display_name": "Mathlib c5ea003 (Lean v4.30.0)",
+        "is_default": false
+      }
+    ]
+  },
+  "theorems": {
+    "main": {
+      "theorem_id": "1849a16a-9dde-4a75-b04d-f08aac7bfab3",
+      "theorem_name": "ModNullUniversality.theorem1_1",
+      "theorem_title": "Theorem 1.1 — no Borel bound modulo null sets at $\\Delta^0_3$",
+      "status": "Open",
+      "formal_statement": "theorem ModNullUniversality.theorem1_1 :\n    ∃ K : ModNullUniversality.CompactMetrizableHaarGroup,\n      ModNullUniversality.IsAbelian K ∧\n      ∃ H : ModNullUniversality.WF → Subgroup K.Carrier,\n        ModNullUniversality.LowComplexityFamily K H ∧\n        ∀ F : ModNullUniversality.StandardBorelEquivalence,\n          ∃ T : ModNullUniversality.WF,\n            ∀ C : Set K.Carrier, MeasurableSet C → K.haar C = 1 →\n              ¬ ModNullUniversality.BorelReducible\n                (fun x y : C => ModNullUniversality.CosetRelation K (H T) x.val y.val)\n                F.rel := by sorry\n",
+      "natural_language_statement": "There are one compact metrizable abelian group $K$, its normalized Haar probability $\\lambda$, and one family of subgroups $(H_T)_{T\\in\\mathrm{WF}}$ with the following properties. Every $H_T$ is $\\Delta^0_3$ in $K$. Every graph $\\{(x,y):x^{-1}y\\in H_T\\}$ is $\\Delta^0_3$ in $K^2$ and is a difference of two $F_\\sigma$ sets. For every Borel equivalence relation $F$ on an arbitrary standard Borel space there is a well-founded tree $T$ such that\n\n$$E_{H_T}^K\\mathbin{\\upharpoonright}C\\not\\leq_B F\n\\qquad\\text{for every Borel }C\\subseteq K\\text{ with }\\lambda(C)=1.$$\n\nThe compact group, measure, and whole family precede the arbitrary target. The selected tree may depend on $F$, but it must work against every Borel conull domain for that target. No invariance of $C$ is required. A reduction on $C$ would have to preserve and reflect the relations on every pair in $C^2$, not just almost every pair for the product measure. Empty target spaces are included; no countability of the full well-founded-tree index set is imposed.",
+      "created_at": "2026-11-09T09:03:14.546411+00:00",
+      "vote_count": 0,
+      "tags": [
+        "borel-reducibility",
+        "descriptive-set-theory",
+        "haar-measure",
+        "measure-theory"
+      ],
+      "preamble": "import Definitions.Def_ModNullCompact20261109\n\nset_option autoImplicit false\n\n",
+      "source": "Universality modulo null sets in the Borel hierarchy, user-supplied unpublished manuscript dated 9 November 2026; SHA-256 48745c75427f83370292c2e4cf91ec06377e80472252db0182599edcd05e2d97, Theorem 1.1, lines 58–71; context lines 73–91 and the modulo-null convention in Section 2. The manuscript has no public URL supplied.",
+      "deprecated_at": null,
+      "deprecated_by": null,
+      "visibility": "public",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "audits": [],
+      "readback": {
+        "readback": "Read-back author: Codex. The exact runtime model ID is unavailable.\n\nThere exist a type \\(G\\), a group structure on \\(G\\), a compact metrizable topology on \\(G\\) for which multiplication and inversion are continuous, a measurable-space structure on \\(G\\) equal to the Borel \\(\\sigma\\)-algebra of that topology, and a measure \\(\\mu\\) on this measurable space such that \\(\\mu(G)=1\\), \\(\\mu\\) is invariant under left multiplication by every element of \\(G\\), every compact subset has measure strictly less than \\(+\\infty\\), and every nonempty open subset has strictly positive measure; these choices satisfy \\(xy=yx\\) for every \\(x,y\\in G\\), and there exists a function \\(T\\mapsto H_T\\) assigning a subgroup of \\(G\\) to every \\(T\\) in the following indexing set \\(\\mathcal W\\): an element of \\(\\mathcal W\\) is a Boolean-valued function on all finite lists of natural numbers such that, for every finite list \\(s\\) and every natural number \\(k\\), the value true on \\(s\\) followed by \\(k\\) implies the value true on \\(s\\), and there does not exist a function \\(b:\\mathbb N\\to\\mathbb N\\) for which \\(T([b(0),\\ldots,b(n-1)])\\) is true for every \\(n\\in\\mathbb N\\), including \\(n=0\\), where the list is empty; there is no requirement that the empty list have value true, so the function that is false on every list is included in \\(\\mathcal W\\), as is the function true only on the empty list. Each \\(H_T\\) is a subset of \\(G\\) containing the group identity and closed under multiplication and inversion, and the function assigning these subgroups is subject to the following conjunction of conditions, with no additional regularity in its argument \\(T\\) specified: for every \\(T\\in\\mathcal W\\), both the subset \\(H_T\\) of \\(G\\) and the subset \\(R_T=\\{(x,y)\\in G\\times G:x^{-1}y\\in H_T\\}\\) of \\(G\\times G\\) have each of the following two representations in their respective ambient topology (the product topology for \\(R_T\\)): there exists a sequence \\((U_n)_{n\\in\\mathbb N}\\) of subsets with the given subset equal to \\(\\bigcup_{n\\in\\mathbb N}U_n\\), where for every \\(n\\) there exists a countable collection \\(\\mathcal O_n\\) of open subsets of the ambient space such that \\(U_n=\\bigcap_{O\\in\\mathcal O_n}O\\); and there exists a sequence \\((V_n)_{n\\in\\mathbb N}\\) of subsets with the given subset equal to \\(\\bigcap_{n\\in\\mathbb N}V_n\\), where for every \\(n\\) there exists a sequence \\((D_{n,m})_{m\\in\\mathbb N}\\) of closed subsets of the ambient space such that \\(V_n=\\bigcup_{m\\in\\mathbb N}D_{n,m}\\). In addition, for every \\(T\\in\\mathcal W\\) there exist subsets \\(A,B\\subseteq G\\times G\\) and sequences \\((A_n)_{n\\in\\mathbb N}\\), \\((B_n)_{n\\in\\mathbb N}\\) of closed subsets of \\(G\\times G\\) such that \\(A=\\bigcup_{n\\in\\mathbb N}A_n\\), \\(B=\\bigcup_{n\\in\\mathbb N}B_n\\), and \\(R_T=A\\setminus B\\). All natural-number indices in these conditions start at zero; the countable collections of open sets may be empty, whose intersection is the whole ambient space, and the sets occurring in these representations may themselves be empty or the whole ambient space. Finally, for every choice of a type \\(Y\\), a measurable-space structure on \\(Y\\) for which there exists a Polish topology (a topology induced by a complete separable metric) having precisely that Borel \\(\\sigma\\)-algebra, and a relation \\(F\\) on \\(Y\\) that is reflexive, symmetric, and transitive and whose graph \\(\\{(u,v)\\in Y\\times Y:F(u,v)\\}\\) is measurable for the product measurable-space structure, there exists \\(T\\in\\mathcal W\\) such that, for every subset \\(C\\subseteq G\\), if \\(C\\) is measurable in the specified Borel \\(\\sigma\\)-algebra on \\(G\\) and \\(\\mu(C)=1\\), then there does not exist a function \\(f:C\\to Y\\) that is measurable with respect to the measurable-space structure on the subtype \\(C\\) induced by its inclusion in \\(G\\) and the specified measurable-space structure on \\(Y\\), and that satisfies \\(x^{-1}y\\in H_T\\) if and only if \\(F(f(x),f(y))\\) for every \\(x,y\\in C\\), with \\(x,y\\) regarded as elements of \\(G\\) in the group expression. This is an existential assertion about the choices of \\(G\\), its structures, \\(\\mu\\), and the entire subgroup assignment; the choice of \\(T\\) in the final condition may depend on the specified measurable space \\(Y\\) and relation \\(F\\), but must work for every such \\(C\\). Empty target spaces \\(Y\\) are included, with the equivalence-relation conditions then vacuous and with no function from a measure-one \\(C\\) to such a target; the group \\(G\\) and each measure-one \\(C\\) are nonempty, \\(C=G\\) always satisfies the two hypotheses on \\(C\\), and subsets \\(C\\) failing either hypothesis impose no condition.\n",
+        "model": "Codex; exact runtime model identifier unavailable",
+        "created_at": "2026-11-09T09:03:15.800827+00:00"
+      }
+    },
+    "haar": {
+      "theorem_id": "b11bbd4e-c710-48b4-ba44-5e07c461453b",
+      "theorem_name": "ModNullUniversality.haar_amplification",
+      "theorem_title": "Uniform standard-Borel-target consequence of Haar amplification",
+      "status": "Open",
+      "formal_statement": "theorem ModNullUniversality.haar_amplification\n    (K : ModNullUniversality.CompactMetrizableHaarGroup)\n    (F : ModNullUniversality.StandardBorelEquivalence)\n    (hF : Nonempty F.Carrier) :\n    ∃ Q : ModNullUniversality.StandardBorelEquivalence,\n      ∀ H : Subgroup K.Carrier, MeasurableSet (H : Set K.Carrier) →\n        ∀ C : Set K.Carrier, MeasurableSet C → K.haar C = 1 →\n          ModNullUniversality.BorelReducible\n            (fun x y : C => ModNullUniversality.CosetRelation K H x.val y.val) F.rel →\n          ModNullUniversality.BorelReducible (ModNullUniversality.CosetRelation K H) Q.rel := by sorry\n",
+      "natural_language_statement": "Fix a compact metrizable group $K$ with normalized Haar probability and a Borel equivalence relation $F$ on a nonempty standard Borel space. There is one Borel equivalence relation $Q$ on a standard Borel space, chosen before the subgroup or domain, such that for every Borel subgroup $H\\le K$ and every Borel Haar-conull $C\\subseteq K$,\n\n$$E_H^K\\mathbin{\\upharpoonright}C\\leq_B F\n\\quad\\Longrightarrow\\quad E_H^K\\leq_B Q.$$\n\nThis target records the uniform standard-Borel consequence of the manuscript's Lemmas 3.1–3.2. Those lemmas provide the almost-everywhere power as such a target. The statement here does not identify $Q$ with a separately formalized topological $L^0$ space. No abelian hypothesis or invariance of $C$ is imposed. The original reduction and the resulting global reduction are allowed to depend on $H$ and $C$.",
+      "created_at": "2026-11-09T09:02:29.118822+00:00",
+      "vote_count": 0,
+      "tags": [
+        "borel-reducibility",
+        "descriptive-set-theory",
+        "haar-measure",
+        "measure-theory"
+      ],
+      "preamble": "import Definitions.Def_ModNullCompact20261109\n\nset_option autoImplicit false\n\n",
+      "source": "Universality modulo null sets in the Borel hierarchy, user-supplied unpublished manuscript dated 9 November 2026; SHA-256 48745c75427f83370292c2e4cf91ec06377e80472252db0182599edcd05e2d97, Lemmas 3.1–3.2, lines 135–236, specifically the uniform target consequence in lines 218–220. The source almost-everywhere power is also discussed by B. Tsirelson, arXiv:math/0508414, Section 1, p. 3. https://arxiv.org/abs/math/0508414",
+      "deprecated_at": null,
+      "deprecated_by": null,
+      "visibility": "public",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "audits": [],
+      "readback": {
+        "readback": "Read-back model: Codex; exact runtime model ID unavailable.\n\nFor every object $K$ consisting of a carrier group $G$, a compact metrizable topology on $G$ for which multiplication and inversion are continuous, a measurable-space structure equal to the Borel $\\sigma$-algebra of that topology, and a measure $\\mu$ on $G$ satisfying $\\mu(G)=1$ and the Haar-measure assumptions of finiteness on compact sets, left invariance, and positive measure for every nonempty open set, and for every object $F$ consisting of a carrier $Y$ with a measurable-space structure admitting a compatible Polish topology, a relation $R_F\\subseteq Y\\times Y$ that is reflexive, symmetric, and transitive, and measurability of its graph in the product measurable space, assume additionally that $Y$ is nonempty. Then there exists an object $Q$ consisting of a carrier $Z$ with a measurable-space structure admitting a compatible Polish topology and a reflexive, symmetric, transitive relation $R_Q\\subseteq Z\\times Z$ with measurable graph, such that the following holds for every subgroup $H\\leq G$ whose underlying subset is Borel measurable and every Borel measurable subset $C\\subseteq G$ satisfying $\\mu(C)=1$: if there exists a measurable map $f:C\\to Y$, where $C$ has the measurable structure induced from $G$, such that for all $x,y\\in C$, $x^{-1}y\\in H$ if and only if $R_F(f(x),f(y))$, then there exists a measurable map $g:G\\to Z$ such that for all $x,y\\in G$, $x^{-1}y\\in H$ if and only if $R_Q(g(x),g(y))$. The single object $Q$ is chosen after $K$, $F$, and the nonemptiness hypothesis and before $H$, $C$, and the assumed map $f$; it must serve for all of those subsequent choices, while the concluding map $g$ may depend on them. Neither map is required to be injective or surjective. No commutativity of $G$, normality or closedness of $H$, or invariance of $C$ under the relation is assumed. The quantifiers include singleton groups and singleton $Y$, the identity subgroup and the whole group as $H$, and $C=G$; the condition $\\mu(C)=1$ excludes $C=\\varnothing$. For any $H,C$ for which the stated measurable map $f$ does not exist, the implication imposes no concluding reduction for that pair.\n",
+        "model": "Codex; exact runtime model identifier unavailable",
+        "created_at": "2026-11-09T09:02:31.806832+00:00"
+      }
+    },
+    "compact": {
+      "theorem_id": "c7e304ee-20dd-402d-86fa-6d01ada79173",
+      "theorem_name": "ModNullUniversality.compact_coset_unboundedness",
+      "theorem_title": "Section 5 — ordinary unboundedness of the compact coset family",
+      "status": "Open",
+      "formal_statement": "theorem ModNullUniversality.compact_coset_unboundedness :\n    ∃ K : ModNullUniversality.CompactMetrizableHaarGroup,\n      ModNullUniversality.IsAbelian K ∧\n      ∃ H : ModNullUniversality.WF → Subgroup K.Carrier,\n        ModNullUniversality.LowComplexityFamily K H ∧\n        ∀ F : ModNullUniversality.StandardBorelEquivalence,\n          ∃ T : ModNullUniversality.WF,\n            ¬ ModNullUniversality.BorelReducible\n              (ModNullUniversality.CosetRelation K (H T)) F.rel := by sorry\n",
+      "natural_language_statement": "There are one compact metrizable abelian group $K$, its normalized Haar probability, and a family $(H_T)_{T\\in\\mathrm{WF}}$ of subgroups of $K$ such that every subgroup and coset graph is $\\Delta^0_3$, every graph is a difference of two $F_\\sigma$ sets, and\n\n$$\\forall F\\ \\exists T\\in\\mathrm{WF}\\quad E_{H_T}^K\\not\\leq_B F,$$\n\nwhere $F$ ranges over all Borel equivalence relations on standard Borel spaces. The group and entire family are fixed before the target. This is the existential form of the compact-family conclusion established in the manuscript's unnumbered Section 5 argument. It concerns the whole group, without discarding a null set.",
+      "created_at": "2026-11-09T09:02:59.784343+00:00",
+      "vote_count": 0,
+      "tags": [
+        "borel-reducibility",
+        "descriptive-set-theory",
+        "haar-measure",
+        "measure-theory"
+      ],
+      "preamble": "import Definitions.Def_ModNullCompact20261109\n\nset_option autoImplicit false\n\n",
+      "source": "Universality modulo null sets in the Borel hierarchy, user-supplied unpublished manuscript dated 9 November 2026; SHA-256 48745c75427f83370292c2e4cf91ec06377e80472252db0182599edcd05e2d97, Section 5, unnumbered compact-family unboundedness argument, lines 361–395; its prior tensor-family input is Wang, arXiv:2611.02531v1, Corollary 6.1 and its proof. https://arxiv.org/abs/2611.02531v1",
+      "deprecated_at": null,
+      "deprecated_by": null,
+      "visibility": "public",
+      "mathlib_rev": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "audits": [],
+      "readback": {
+        "readback": "Read-back author: Codex; the exact runtime model ID is unavailable. There exist a type $K$ in Lean's base type universe, a group structure on $K$, a compact metrizable topology on $K$ for which multiplication and inversion are continuous, a measurable-space structure on $K$ equal to the Borel $\\sigma$-algebra of that topology, and a measure $\\mu$ on this measurable space such that $\\mu(K)=1$, every compact subset has measure strictly less than $\\infty$, the pushforward of $\\mu$ by $x\\mapsto gx$ equals $\\mu$ for every $g\\in K$, and every nonempty open set has nonzero measure; moreover, $xy=yx$ for every $x,y\\in K$. For this single choice of all these data there exists a function $T\\mapsto H_T$ assigning a subgroup of $K$ to every index $T$ in the following set $\\mathcal W$: an index is a Boolean-valued function $t$ on finite lists of natural numbers, together with the property that $t(s^\\frown[n])=\\mathrm{true}$ implies $t(s)=\\mathrm{true}$ for every finite list $s$ and every $n\\in\\mathbb N$, and the property that there is no function $b:\\mathbb N\\to\\mathbb N$ for which $t([b(0),\\ldots,b(k-1)])=\\mathrm{true}$ for every $k\\in\\mathbb N$. Here $\\mathbb N$ contains $0$, the list at $k=0$ is the empty list, and both the empty tree (the constantly false predicate) and the tree consisting only of the empty list are among the indices. For every $T\\in\\mathcal W$, define $R_T=\\{(x,y)\\in K\\times K:x^{-1}y\\in H_T\\}$, using the product topology on $K\\times K$; both $H_T$ as a subset of $K$ and $R_T$ as a subset of $K\\times K$ are simultaneously a union indexed by $\\mathbb N$ of $G_\\delta$ sets and an intersection indexed by $\\mathbb N$ of $F_\\sigma$ sets, where a $G_\\delta$ set is an intersection of a countable family of open sets (the family may be empty, with intersection the entire ambient space) and an $F_\\sigma$ set is a union indexed by $\\mathbb N$ of closed sets. In addition, for every $T\\in\\mathcal W$ there are $F_\\sigma$ subsets $A_T,B_T\\subseteq K\\times K$ such that $R_T=A_T\\setminus B_T$; no inclusion between $A_T$ and $B_T$ is stipulated, and these witnesses and all preceding complexity witnesses may depend on $T$ and on the set being represented. There is no requirement that the assignment $T\\mapsto H_T$ be measurable or that different indices have different subgroups. Finally, for every type $Y$ in Lean's base type universe equipped with a measurable-space structure admitting some compatible Polish topology (a second-countable topology induced by a complete metric whose Borel $\\sigma$-algebra is the given measurable structure), and every relation $F$ on $Y$ that is reflexive, symmetric, and transitive and whose graph $\\{(u,v)\\in Y\\times Y:F(u,v)\\}$ is measurable for the product measurable structure, there exists an index $T\\in\\mathcal W$ such that there is no function $f:K\\to Y$ which is measurable for the specified measurable structures and satisfies $x^{-1}y\\in H_T\\iff F(f(x),f(y))$ for every $x,y\\in K$. The index $T$ may depend on this target space and relation, while $K$, its structures and measure, and the whole family $(H_T)_{T\\in\\mathcal W}$ are chosen before the target; the equivalence condition concerns every pair of points, with no almost-everywhere qualification. The quantification over target spaces includes the empty space, for which the nonexistence of a function from the nonempty group $K$ already gives this no-reduction conclusion; all countable unions and intersections indexed by $\\mathbb N$ include the index $0$ and may use repeated or empty constituent sets whenever the stated open or closed conditions allow them.\n",
+        "model": "Codex; exact runtime model identifier unavailable",
+        "created_at": "2026-11-09T09:03:02.802267+00:00"
+      }
+    }
+  }
+}

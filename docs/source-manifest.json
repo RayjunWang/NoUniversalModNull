@@ -1,0 +1,540 @@
+{
+  "format": 1,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 88,
+      "sha256": "09636300a4f3ecef1c1649acf6c4fb4f055b1053dccfc6ff873d0dd7c5369ac9"
+    },
+    {
+      "path": ".github/workflows/lean.yml",
+      "bytes": 1015,
+      "sha256": "b1002e8cb203963d7e2a883dbcb4d6a26f756037385e465f12470985eb573190"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 91,
+      "sha256": "fcfcefe7830ff28171bc9ae7aa6708f17807fc0ebb904c6918612257f9587916"
+    },
+    {
+      "path": "Definitions/Def_ModNullCompact20261109.lean",
+      "bytes": 1634,
+      "sha256": "73d1414aa1463f6354a6906fdcc2cfc02cf73d60bdd16d6a2338ff7f970ecd4f"
+    },
+    {
+      "path": "Definitions/Def_ModNullCore20261109.lean",
+      "bytes": 2173,
+      "sha256": "69eb631ab3e37a00ae1a37cd21ea7e7f418935c0383738eab63950502de8c822"
+    },
+    {
+      "path": "Definitions/Def_NoBorelUpperBound20261101.lean",
+      "bytes": 974,
+      "sha256": "b975725aad231fd83ce6e507a6088331c1deee4f73bd9a32fef25292164414ed"
+    },
+    {
+      "path": "Definitions/Def_NoBorelUpperBoundTransfer20261101.lean",
+      "bytes": 719,
+      "sha256": "70350cdb2c3d623068d22cdbbdf3c706b4535dc39fc1c35e0ca21bc339f207fb"
+    },
+    {
+      "path": "Definitions/Def_NoUniversalFSigma261031052.lean",
+      "bytes": 3070,
+      "sha256": "17689fb14e3cc735b114813507089ac8212369f83a44b4c57abe978563d14b67"
+    },
+    {
+      "path": "docs/dependency-integrity.json",
+      "bytes": 798,
+      "sha256": "bd82038604e5ece1491f0e6066134b55c1476af57dea15f2079a1e3ca1ca68ee"
+    },
+    {
+      "path": "docs/explanation-compact.md",
+      "bytes": 8409,
+      "sha256": "5e26bc64b7876e2d30f787e14fb67860054ab9de670b022c47bfec98f501511c"
+    },
+    {
+      "path": "docs/explanation-haar.md",
+      "bytes": 4201,
+      "sha256": "eceb34fd4c321ec40ff73a0d5aac8a1f872b6892ca62c15d47f525c362e97d4f"
+    },
+    {
+      "path": "docs/explanation-main.md",
+      "bytes": 7565,
+      "sha256": "acc0da6525cb4e76df9884e0c0dd3e6a9772238a2cfe0930e83b480565cf26f4"
+    },
+    {
+      "path": "docs/ModNullUniversality.tex",
+      "bytes": 22253,
+      "sha256": "d85d66e9e3d917008c2e8163d48c81230ed3be632fae431c405f185f0a0fff22"
+    },
+    {
+      "path": "docs/proof-outline.md",
+      "bytes": 10235,
+      "sha256": "e002d8746f6c5f189be3c69f2a72586af120ef5c90e431a7ebbe2b3f9fa9aac7"
+    },
+    {
+      "path": "docs/prove2me/CompactCosetUnboundedness.attempt.json",
+      "bytes": 195,
+      "sha256": "26bae7a4c14b2ff37e3198b7b13d5a8645f30097a5a9ca86ae8933cc505ed8fa"
+    },
+    {
+      "path": "docs/prove2me/CompactCosetUnboundedness.proved-target.json",
+      "bytes": 6170,
+      "sha256": "e8294ccf6d6fcf2a47eb9bf84b5a713f03a66e81ce7152fe522e9112024cfe6d"
+    },
+    {
+      "path": "docs/prove2me/CompactCosetUnboundedness.source-readback.json",
+      "bytes": 596,
+      "sha256": "875335e9790df350ed65b69aab9a3e52c11d27351e93f97f87b3a2bc9db747b3"
+    },
+    {
+      "path": "docs/prove2me/CompactCosetUnboundedness.submission.json",
+      "bytes": 571,
+      "sha256": "7c1fe3491721145534222b6cb7c52c9b32a00eb725e75de18bb72027603dc000"
+    },
+    {
+      "path": "docs/prove2me/CompactCosetUnboundedness.verdict.json",
+      "bytes": 455,
+      "sha256": "6abd7c8b4f5dda9cfd10db47c34394995792095e56d9f9dd5b8f8e3d88d9866d"
+    },
+    {
+      "path": "docs/prove2me/HaarAmplification.attempt.json",
+      "bytes": 195,
+      "sha256": "24c21ea512175fdaf0c73461b2dd9d68c483e89d9fa42713e7d8205bb973f636"
+    },
+    {
+      "path": "docs/prove2me/HaarAmplification.proved-target.json",
+      "bytes": 5054,
+      "sha256": "7d60aa204be620f218a35b65185f5502ac9b062d86164d84494c06c2c110e5e5"
+    },
+    {
+      "path": "docs/prove2me/HaarAmplification.source-readback.json",
+      "bytes": 578,
+      "sha256": "92901e7828bcdd1f5e06a692c5d2ca1b922b0e4f6123f36337b8f3dd150331e0"
+    },
+    {
+      "path": "docs/prove2me/HaarAmplification.submission.json",
+      "bytes": 571,
+      "sha256": "04186ef0523358ae10b41a9d28f6195523bae48999d5019ce20c3b4cde15fc55"
+    },
+    {
+      "path": "docs/prove2me/HaarAmplification.verdict.json",
+      "bytes": 454,
+      "sha256": "7da7b09fe6c3af46a9e3b09d45672cfe140f7c77591c1b459c8c4bd240f70a51"
+    },
+    {
+      "path": "docs/prove2me/Main.attempt.json",
+      "bytes": 195,
+      "sha256": "9f67c67dd6085d23de9595fa58eea0c9bd17e87986a3eac8ba80a60ebda750ba"
+    },
+    {
+      "path": "docs/prove2me/Main.proved-target.json",
+      "bytes": 7790,
+      "sha256": "08448eed9f5072a8ce12f1a51108f1afeb8e15aeb7b05e17baa384388a3fa686"
+    },
+    {
+      "path": "docs/prove2me/Main.source-readback.json",
+      "bytes": 557,
+      "sha256": "c146f205e1eeeedadd8e961834fe9de44801f02d1e69df73be4e5a4a45121196"
+    },
+    {
+      "path": "docs/prove2me/Main.submission.json",
+      "bytes": 571,
+      "sha256": "426b0eb22dd292233f031d803743404e6795966d387c8f9b1a37125ce81a413e"
+    },
+    {
+      "path": "docs/prove2me/Main.verdict.json",
+      "bytes": 455,
+      "sha256": "88f8915d0f8f870d9469ad822844b7c9aeb5674bbd5ef9964b4ab95d5694a4c7"
+    },
+    {
+      "path": "docs/prove2me-acceptance.json",
+      "bytes": 2428,
+      "sha256": "eb245e7b79fde92ee604de55e60806142acbb48a5ae616361fa4c4caebf7658c"
+    },
+    {
+      "path": "docs/prove2me-targets.json",
+      "bytes": 20137,
+      "sha256": "4a982bc02dee3e765586cd08138e262df9576c401af9fabe96903d0ef794556b"
+    },
+    {
+      "path": "docs/review-compact-transfer.md",
+      "bytes": 3652,
+      "sha256": "18ac006d224a6efd7564ba557c7da130d86a94e7b6203b3e0b2838c114e7f049"
+    },
+    {
+      "path": "docs/source-bindings.json",
+      "bytes": 3328,
+      "sha256": "82bcb61d0b97a9499459e101587ff62cfc4f4ba5cf9ce3d0f65e7ca4322b5d99"
+    },
+    {
+      "path": "docs/verification.md",
+      "bytes": 2428,
+      "sha256": "228261ac6b1317eeaf8b9bcc680daf12f4793a6ac625e5a71ba99f6af82eccfc"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3665,
+      "sha256": "0dcc404151aab04dbca3649f63b8e5463039dba96a75139abe7bdab3f713442d"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 381,
+      "sha256": "bb5add0faae7a7593a8062bbb19c4f9c0ffb5aec2e1e6164c246d98d950487e2"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "ModNullProof/AEPowerBorel.lean",
+      "bytes": 5289,
+      "sha256": "4f421623948e71f9ff02dc419afd53220bc8f5872a69a9e617f622665ec07856"
+    },
+    {
+      "path": "ModNullProof/AEPowerRealCodes.lean",
+      "bytes": 5853,
+      "sha256": "d76a3239ef7b9a18af39c1ff73f4cc9fe370c33b536749e649cf4d6fad683257"
+    },
+    {
+      "path": "ModNullProof/BaireOneComplexity.lean",
+      "bytes": 7302,
+      "sha256": "93033f3503fc39940d13b7ed757bfa264b02ac38def600db551f2bad89f2d915"
+    },
+    {
+      "path": "ModNullProof/BaireOneComplexityAudit.lean",
+      "bytes": 274,
+      "sha256": "1297d69f69a0018247eedb09475307a9d4618d02b6db3d4192dbeffd26d1118f"
+    },
+    {
+      "path": "ModNullProof/BorelComplexity.lean",
+      "bytes": 5777,
+      "sha256": "28792daa99005e55a8387f178d3ab3669e4a95b1eef9b410587ddf7e7f3a13c9"
+    },
+    {
+      "path": "ModNullProof/CompactCosets.lean",
+      "bytes": 3084,
+      "sha256": "f14a347598c9c6c20a066fc1bf6ce0c99f97e74cdbed9a51adf3755dc4db2c46"
+    },
+    {
+      "path": "ModNullProof/CompactEmbedding.lean",
+      "bytes": 3632,
+      "sha256": "e22da70e54fd2bf9709f9e03395ff87f4f24a38a56688ff389919ccb81fab609"
+    },
+    {
+      "path": "ModNullProof/CompactFamily.lean",
+      "bytes": 1253,
+      "sha256": "1fa481dc4d24ec6a42624be52114630e3ce58a7a94062dcdeab6f13771c8618e"
+    },
+    {
+      "path": "ModNullProof/CompactUnbounded.lean",
+      "bytes": 634,
+      "sha256": "2dfbaf9e8ad092f9c7be6aa8aec1039c92fdb2a9cfea7dd9a3795f4eda0b74bf"
+    },
+    {
+      "path": "ModNullProof/ConullAssembly.lean",
+      "bytes": 1322,
+      "sha256": "eeb5434956209eebfb1554508ebf5de4360819de0c5e0fd10dc50512c4b04201"
+    },
+    {
+      "path": "ModNullProof/CoordinateBounds.lean",
+      "bytes": 3125,
+      "sha256": "0d064f7a70211023bb03463d59373df658e1e98786933236c892456c9ec8f0c8"
+    },
+    {
+      "path": "ModNullProof/Coordinates.lean",
+      "bytes": 1303,
+      "sha256": "7f28c4f63b726c06f0e6fbf345aec6f8795321e50f66c0603a85694294877c89"
+    },
+    {
+      "path": "ModNullProof/HaarAmplification.lean",
+      "bytes": 3052,
+      "sha256": "b1805b4fb9addfeb2e8312039a97a044044d7cbe391876888f60972fe3402ba2"
+    },
+    {
+      "path": "ModNullProof/KSigmaComplexity.lean",
+      "bytes": 1892,
+      "sha256": "9b2394010e52253fb5272664a157c0b9fdf49cc904f32c856a2a9c849a360d4f"
+    },
+    {
+      "path": "ModNullProof/LinearCosets.lean",
+      "bytes": 6004,
+      "sha256": "895c6fdab783824bf6aa39e519e470060b94f0fe9141fc8c78dd955cb7064e5a"
+    },
+    {
+      "path": "ModNullProof/OrdinaryUnbounded.lean",
+      "bytes": 3544,
+      "sha256": "2c35db2184fe7030fe50c9c046f896609df81a9fbbb0f4843172475d8b73044c"
+    },
+    {
+      "path": "ModNullProof/OrdinaryUnboundedAudit.lean",
+      "bytes": 316,
+      "sha256": "1f9d9c2c264130e5d77ef1f783311446d75b943a9a8bfcec1f861171bd981d68"
+    },
+    {
+      "path": "ModNullProof/TensorCompact.lean",
+      "bytes": 5937,
+      "sha256": "d5b3b1bb65298fbfc9ad9c188e40063a122d8a5ec654e391409f37f9c0fe824e"
+    },
+    {
+      "path": "ModNullProof/TensorFamily.lean",
+      "bytes": 913,
+      "sha256": "8b8bb36a2a03d753fbee3a4ec4a7eb4961114771dcc712d8dc9f8b050289f6de"
+    },
+    {
+      "path": "ModNullProof/WeakTensorCharts.lean",
+      "bytes": 6960,
+      "sha256": "aca7d20f20af9788a610a515475eb98b6e7a7021603237818b7469244ee025b1"
+    },
+    {
+      "path": "ModNullProof/WeakTensorCoordinates.lean",
+      "bytes": 4478,
+      "sha256": "26af0063b4a7ff859a507a57e5f9f2f03ab6987f85a958aee102c36265f1bb4a"
+    },
+    {
+      "path": "ModNullProof/WeakTensorRank.lean",
+      "bytes": 8890,
+      "sha256": "5137ddd658ca4e76c8050f549847a9289cf8d246fe10141ab536d3e102ea4948"
+    },
+    {
+      "path": "ModNullUniversalityProof.lean",
+      "bytes": 100,
+      "sha256": "f9e3ad0167235bc9f1fb2fb4d93d4149b3c7d83029bf3ad8f85f5392f9ae4e77"
+    },
+    {
+      "path": "NoBorelUpperBound/BaireContinuity.lean",
+      "bytes": 2348,
+      "sha256": "3c363fa4cc2f69734c07c0cd78cbc8cf5773a721a6769037bae6d27259431f55"
+    },
+    {
+      "path": "NoBorelUpperBound/BorelEvaluator.lean",
+      "bytes": 3585,
+      "sha256": "245d3e40dcd6ace2a08cdd05dc6b39cc2cf1ba46b775cda850369c038276b26b"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryAnalytic.lean",
+      "bytes": 7234,
+      "sha256": "08eaa3ddfc3bf5aa819c2c3e44be72fdc13955fb327f94ab5258ae6a399dc374"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryMembership.lean",
+      "bytes": 5924,
+      "sha256": "60a46e78ca408af5328747039d3d33da3d49a7acd24f27b28cf5120a900d17fc"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryProduct.lean",
+      "bytes": 4193,
+      "sha256": "18618060b54ecb0d8ea321d66c5bacf9ae88e2ffa66911843d90ee14358caf29"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryQuantifier.lean",
+      "bytes": 5375,
+      "sha256": "8f51fe82edf398dc1b5fd7119eca0810901af590456bce2c544370366ce035ba"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryTransfer.lean",
+      "bytes": 7255,
+      "sha256": "bbb9f5990a4b04ff5e8a8a08d886b6abee813c9089652b4452eaf833a9115053"
+    },
+    {
+      "path": "NoBorelUpperBound/CategoryTransferFinal.lean",
+      "bytes": 1984,
+      "sha256": "1f43e331e8050b5179b9809096447af489f084850f867f16c937affda68d444a"
+    },
+    {
+      "path": "NoBorelUpperBound/Construction.lean",
+      "bytes": 6314,
+      "sha256": "923cc0cab31b9762694a712c8baf669c7ff45ee1449a6e37e8735a5524aad59b"
+    },
+    {
+      "path": "NoBorelUpperBound/ConstructionFamily.lean",
+      "bytes": 3360,
+      "sha256": "949da4833040fe4657c98429342191dffce263e7472675973ab4d1f68ca5a9ce"
+    },
+    {
+      "path": "NoBorelUpperBound/GenericRepresentation.lean",
+      "bytes": 3030,
+      "sha256": "27d135bac38903e17703f223d45a81d407cb0e26638242167e69689b4e7cc46f"
+    },
+    {
+      "path": "NoBorelUpperBound/IllFoundedNonBorel.lean",
+      "bytes": 3731,
+      "sha256": "e8999ff2c5c2165f9214825b5050ed28e4569b6f0d257a79146d91f322550c3b"
+    },
+    {
+      "path": "NoBorelUpperBound/L1Coordinates.lean",
+      "bytes": 9710,
+      "sha256": "7b0d079f57dd4724e19562c1efd135c11405ba4d15f5b0ea6a46a42f58430523"
+    },
+    {
+      "path": "NoBorelUpperBound/L1Separable.lean",
+      "bytes": 1196,
+      "sha256": "c8733cfb022367c5fd30b2c9d21b7a554efcf4ff2390a2f7e451bbc955674dbc"
+    },
+    {
+      "path": "NoBorelUpperBound/Main.lean",
+      "bytes": 2502,
+      "sha256": "903db47a30b4aae6f526e49a3f8fe58169eeb854361e060eb61ef5e4f1b02217"
+    },
+    {
+      "path": "NoBorelUpperBound/NilpotentGenerated.lean",
+      "bytes": 5621,
+      "sha256": "4ed6410fd131a7fb0ec976432dfcd1367f4abed2b0f9fac9fc9626375229fdca"
+    },
+    {
+      "path": "NoBorelUpperBound/NilpotentGroup.lean",
+      "bytes": 4726,
+      "sha256": "81f767d17167f7a977cbe6f296f4cc5a088d53815c2c5a9f99218a02259dad97"
+    },
+    {
+      "path": "NoBorelUpperBound/SymmetricTensor.lean",
+      "bytes": 3936,
+      "sha256": "4da75adfdd7147657d79fb4de261fe200e1eeecb5f3f1c1e8f5034345d2b3ca3"
+    },
+    {
+      "path": "NoBorelUpperBound/SymmetricTensorCharts.lean",
+      "bytes": 5578,
+      "sha256": "0109032f43d7a3611c84382a7f2af976b9201d41abef4c9e71da6db5e16445d1"
+    },
+    {
+      "path": "NoBorelUpperBound/SymmetricTensorImage.lean",
+      "bytes": 4931,
+      "sha256": "2d30a4bc06f9e2c04e56f3197023666def0e9532d0497a15fcd16da98e26ef78"
+    },
+    {
+      "path": "NoBorelUpperBound/SymmetricTensorLinear.lean",
+      "bytes": 6161,
+      "sha256": "893d08ae0a096f5f26cc8e88af28bf28111c3d4db5c00ffce4c186fc52cba531"
+    },
+    {
+      "path": "NoBorelUpperBound/SymmetricTensorRank.lean",
+      "bytes": 10452,
+      "sha256": "e91bff680195906729751501654aaaf208a581236ade4ccaf186e707bad47cf1"
+    },
+    {
+      "path": "NoBorelUpperBound/TreeKernels.lean",
+      "bytes": 6895,
+      "sha256": "b02779fe0f15cd88ec044206a56c68f1cb29b38c2cf47b044b38a16c3b032654"
+    },
+    {
+      "path": "NoBorelUpperBound/TreeShift.lean",
+      "bytes": 7545,
+      "sha256": "089e6817b6e7eec582a26b3677b687c22075cec5499998554fe9b619f9a295e9"
+    },
+    {
+      "path": "NoBorelUpperBound/TreeSpace.lean",
+      "bytes": 3219,
+      "sha256": "395dd7ab9c6bcf5baafe03193b188c80606dd9960c7d3c526b1f45d4a80a666a"
+    },
+    {
+      "path": "NoBorelUpperBound/UniversalAnalytic.lean",
+      "bytes": 3557,
+      "sha256": "d4ab9f4863b28b11f21eeada4dc029fc6bcc52b90f95a980f32f8962a340a07f"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 561,
+      "sha256": "98e34d77320193fad097458bdb2219d1e00859d5ff868fc3686ad019a7b35f8f"
+    },
+    {
+      "path": "Prove2Me/CompactCosetUnboundedness.lean",
+      "bytes": 204019,
+      "sha256": "68df3abbf7d972b0995646b2b19a2b8862511d294d5522a53b1fd45de0feb61f"
+    },
+    {
+      "path": "Prove2Me/CompactCosetUnboundedness.manifest.json",
+      "bytes": 39144,
+      "sha256": "3988fba2914eba68bd8c3eb6032778e4cfcb1a953e2d21cc7fc2e67ab6d679cc"
+    },
+    {
+      "path": "Prove2Me/HaarAmplification.lean",
+      "bytes": 16696,
+      "sha256": "1b27a251e88d999f7bb8dd3c78c6cd47b59174047061d7b84b32b776387136a6"
+    },
+    {
+      "path": "Prove2Me/HaarAmplification.manifest.json",
+      "bytes": 4797,
+      "sha256": "3b6f6607caf9943a63438b706d733917debed4206a93ae4796de70ef4dfc73a5"
+    },
+    {
+      "path": "Prove2Me/Main.lean",
+      "bytes": 221657,
+      "sha256": "e5c149167ebde12e5615bdf637f0a11c9d2bcb4089afb521b8215695ef1132d9"
+    },
+    {
+      "path": "Prove2Me/Main.manifest.json",
+      "bytes": 43944,
+      "sha256": "0ce6c1b96ab0fb0c83f1ee9d3624868ee144dc8bc237b29499ac94d373363c48"
+    },
+    {
+      "path": "Prove2Me/README.md",
+      "bytes": 1019,
+      "sha256": "3de36faeb2d6be8b672b692a5ccdd693850a25164aa80c706999851207fdc5b1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2879,
+      "sha256": "76cfeec6be16be71eab7108a020a6b7e632224fc208876c81d6816a09733d34e"
+    },
+    {
+      "path": "scripts/audit.py",
+      "bytes": 9544,
+      "sha256": "03c87ec7951d86009c7322f99474661c83466364a3577fe053e4edf4d59501d6"
+    },
+    {
+      "path": "scripts/audit_axioms.lean",
+      "bytes": 1122,
+      "sha256": "e57dbf2676020668b28dab32cf8423d457073b818e87a7ea45c66dc465ae0648"
+    },
+    {
+      "path": "scripts/extract_module_info.lean",
+      "bytes": 2011,
+      "sha256": "3e01678a3497598f17e56c33fff0a377a47181bf3acdbcaa80ec38a2206ebb25"
+    },
+    {
+      "path": "scripts/package_release.py",
+      "bytes": 3125,
+      "sha256": "7b70b0346fb55063ef5436a5ff2ee392287da94e509d0d39c9379f5593c0259d"
+    },
+    {
+      "path": "scripts/prepare_upload.py",
+      "bytes": 14427,
+      "sha256": "808764e5eed9bf7242cb3c6bb2ab27c8daffc721605c0256f87f0768d8044450"
+    },
+    {
+      "path": "scripts/prove2me_api.py",
+      "bytes": 3114,
+      "sha256": "7a85baa98a832511ab89410235e8989621d150a327035e749561f6c884ed2df4"
+    },
+    {
+      "path": "scripts/submit_checked.py",
+      "bytes": 3043,
+      "sha256": "41ddf48930379c661de308a01a0ee9ed0e1bcbfe43e0ed9a1e9d23299d36718c"
+    },
+    {
+      "path": "scripts/verify_readback.py",
+      "bytes": 2915,
+      "sha256": "4c95a9f8a209803ae20ec1f3701a56ef32f04a7b44c3cbc9a63e376915979075"
+    },
+    {
+      "path": "Solutions/CompactCosetUnboundedness.lean",
+      "bytes": 610,
+      "sha256": "ccbd3bc080910872d9ce3a973655ab7597d086340a68c5364dd3bd2e91c3ea2f"
+    },
+    {
+      "path": "Solutions/HaarAmplification.lean",
+      "bytes": 702,
+      "sha256": "3a597fb054de37f52e78f029c4d05de69d6c017ada5b8a3691a1623809afd2f0"
+    },
+    {
+      "path": "Solutions/Main.lean",
+      "bytes": 968,
+      "sha256": "7a06d187a64ffb065035e8a0a290f887ae08be526983c5a9ae101a5a15d3452c"
+    }
+  ]
+}

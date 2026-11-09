@@ -1,0 +1,18 @@
+{
+  "theorem_name": "ModNullUniversality.compact_coset_unboundedness",
+  "theorem_id": "c7e304ee-20dd-402d-86fa-6d01ada79173",
+  "submission_id": "e6e9bddd-afdb-42c0-97a6-88a2ef538ee0",
+  "status": "ACCEPTED",
+  "theorem_status": "Proved",
+  "sha256": "68df3abbf7d972b0995646b2b19a2b8862511d294d5522a53b1fd45de0feb61f",
+  "bytes": 204019,
+  "readback_sha256_matches": true,
+  "local_compile_seconds": 42.11,
+  "exact_target_type": true,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "release_solution": "Prove2Me/CompactCosetUnboundedness.lean"
+}
